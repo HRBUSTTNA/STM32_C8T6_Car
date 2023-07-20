@@ -1,0 +1,90 @@
+{
+	"kind" : "toolchains",
+	"toolchains" : 
+	[
+		{
+			"compiler" : 
+			{
+				"id" : "GNU",
+				"implicit" : 
+				{
+					"includeDirectories" : 
+					[
+						"D:/jetbrains/CLion 2023.1.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include",
+						"D:/jetbrains/CLion 2023.1.4/bin/mingw/include",
+						"D:/jetbrains/CLion 2023.1.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed",
+						"D:/jetbrains/CLion 2023.1.4/bin/mingw/x86_64-w64-mingw32/include"
+					],
+					"linkDirectories" : [],
+					"linkFrameworkDirectories" : [],
+					"linkLibraries" : []
+				},
+				"path" : "D:/jetbrains/CLion 2023.1.4/bin/mingw/bin/gcc.exe",
+				"version" : "11.2.0"
+			},
+			"language" : "C",
+			"sourceFileExtensions" : 
+			[
+				"c",
+				"m"
+			]
+		},
+		{
+			"compiler" : 
+			{
+				"id" : "GNU",
+				"implicit" : 
+				{
+					"includeDirectories" : 
+					[
+						"D:/jetbrains/CLion 2023.1.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++",
+						"D:/jetbrains/CLion 2023.1.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32",
+						"D:/jetbrains/CLion 2023.1.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward",
+						"D:/jetbrains/CLion 2023.1.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include",
+						"D:/jetbrains/CLion 2023.1.4/bin/mingw/include",
+						"D:/jetbrains/CLion 2023.1.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed",
+						"D:/jetbrains/CLion 2023.1.4/bin/mingw/x86_64-w64-mingw32/include"
+					],
+					"linkDirectories" : [],
+					"linkFrameworkDirectories" : [],
+					"linkLibraries" : []
+				},
+				"path" : "D:/jetbrains/CLion 2023.1.4/bin/mingw/bin/g++.exe",
+				"version" : "11.2.0"
+			},
+			"language" : "CXX",
+			"sourceFileExtensions" : 
+			[
+				"C",
+				"M",
+				"c++",
+				"cc",
+				"cpp",
+				"cxx",
+				"mm",
+				"mpp",
+				"CPP",
+				"ixx",
+				"cppm"
+			]
+		},
+		{
+			"compiler" : 
+			{
+				"implicit" : {},
+				"path" : "D:/jetbrains/CLion 2023.1.4/bin/mingw/bin/windres.exe"
+			},
+			"language" : "RC",
+			"sourceFileExtensions" : 
+			[
+				"rc",
+				"RC"
+			]
+		}
+	],
+	"version" : 
+	{
+		"major" : 1,
+		"minor" : 0
+	}
+}
