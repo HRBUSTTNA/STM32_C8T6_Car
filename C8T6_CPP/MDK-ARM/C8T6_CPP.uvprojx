@@ -330,8 +330,8 @@
             <uC99>1</uC99>
             <uGnu>0</uGnu>
             <useXO>0</useXO>
-            <v6Lang>3</v6Lang>
-            <v6LangP>5</v6LangP>
+            <v6Lang>5</v6Lang>
+            <v6LangP>3</v6LangP>
             <vShortEn>1</vShortEn>
             <vShortWch>1</vShortWch>
             <v6Lto>0</v6Lto>
@@ -341,7 +341,7 @@
               <MiscControls></MiscControls>
               <Define>USE_HAL_DRIVER,STM32F103xB</Define>
               <Undefine></Undefine>
-              <IncludePath>../Core/Inc;../Drivers/STM32F1xx_HAL_Driver/Inc;../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy;../Drivers/CMSIS/Device/ST/STM32F1xx/Include;../Drivers/CMSIS/Include;.\include\Header;.\include\type</IncludePath>
+              <IncludePath>../Core/Inc;../Drivers/STM32F1xx_HAL_Driver/Inc;../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy;../Drivers/CMSIS/Device/ST/STM32F1xx/Include;../Drivers/CMSIS/Include;.\include;.\include\Header;.\include\type</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -498,12 +498,17 @@
           </Files>
         </Group>
         <Group>
-          <GroupName>INCLUDE</GroupName>
+          <GroupName>include</GroupName>
           <Files>
             <File>
-              <FileName>include.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>.\include\Header\include.h</FilePath>
+              <FileName>cppmain.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>.\include\cppmain.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>type.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>.\include\type\type.cpp</FilePath>
             </File>
             <File>
               <FileName>type.h</FileName>
@@ -511,9 +516,9 @@
               <FilePath>.\include\type\type.h</FilePath>
             </File>
             <File>
-              <FileName>cppmain.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>.\include\cppmain.cpp</FilePath>
+              <FileName>include.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\include\Header\include.h</FilePath>
             </File>
             <File>
               <FileName>includecpp.h</FileName>
