@@ -13,6 +13,7 @@ void Co_main()
     Car.PWM.PWM_Now_Num = 0;
     HAL_TIM_Base_Start_IT(&htim2);
     HAL_TIM_Base_Start_IT(&htim3);
+    HAL_GPIO_WritePin(LED_GPIO_Port,LED_Pin,GPIO_PIN_SET);
 }
 
 void Co_while_main()

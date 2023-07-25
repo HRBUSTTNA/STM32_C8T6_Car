@@ -2,7 +2,6 @@
 "c8t6_cpp\startup_stm32f103xb.o"
 "c8t6_cpp\main.o"
 "c8t6_cpp\gpio.o"
-"c8t6_cpp\tim.o"
 "c8t6_cpp\stm32f1xx_it.o"
 "c8t6_cpp\stm32f1xx_hal_msp.o"
 "c8t6_cpp\stm32f1xx_hal_gpio_ex.o"
