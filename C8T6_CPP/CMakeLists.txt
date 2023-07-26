@@ -1031,4 +1031,4 @@ add_executable(C8T6_CPP
         MDK-ARM/C8T6_CPP.uvprojx
         MDK-ARM/startup_stm32f103xb.s
         .mxproject
-        C8T6_CPP.ioc)
+        C8T6_CPP.ioc MDK-ARM/include/type/move.cpp)

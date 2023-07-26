@@ -25,5 +25,5 @@ void cpp_main() {
 
 void cpp_while_main() {
     Car.mottor_Move.PWM_Speed_Write(1, Car.PWM);
-    Car.mottor_Move.move_Single(1, MOVE_MOD);
+    Car.Move.move_all(MOVE_MOD,Car.mottor_Move);
 }
