@@ -495,7 +495,7 @@ I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_cortex.h)(0x64971CFA)
 I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_flash.h)(0x64971CFA)
 I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_flash_ex.h)(0x64971CFA)
 I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_pwr.h)(0x64971CFA)
-F (.\include\cppmain.cpp)(0x64C0D0D4)(-xc++ -std=c++11 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar -fno-exceptions-gdwarf-4 -O3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ./include -I ./include/Header -I ./include/type-I./RTE/_C8T6_CPP-ID:/Keil5/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-ID:/Keil5/Packs/Keil/STM32F1xx_DFP/2.3.0/Device/Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB-o c8t6_cpp/cppmain.o -MD)
+F (.\include\cppmain.cpp)(0x64C16EAA)(-xc++ -std=c++11 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar -fno-exceptions-gdwarf-4 -O3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ./include -I ./include/Header -I ./include/type-I./RTE/_C8T6_CPP-ID:/Keil5/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-ID:/Keil5/Packs/Keil/STM32F1xx_DFP/2.3.0/Device/Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB-o c8t6_cpp/cppmain.o -MD)
 I (include\Header\include.h)(0x64BF78C3)
 I (include\Header\includecpp.h)(0x64BF8276)
 I (..\Core\Inc\main.h)(0x64BF853F)
@@ -529,7 +529,7 @@ I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_flash.h)(0x64971CFA)
 I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_flash_ex.h)(0x64971CFA)
 I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_pwr.h)(0x64971CFA)
 I (..\Core\Inc\gpio.h)(0x64BF7EDF)
-I (include\type\type.h)(0x64C0CC61)
+I (include\type\type.h)(0x64C16EA4)
 F (.\include\type\type.cpp)(0x64C0D08A)(-xc++ -std=c++11 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar -fno-exceptions-gdwarf-4 -O3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ./include -I ./include/Header -I ./include/type-I./RTE/_C8T6_CPP-ID:/Keil5/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-ID:/Keil5/Packs/Keil/STM32F1xx_DFP/2.3.0/Device/Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB-o c8t6_cpp/type.o -MD)
 I (include\Header\includecpp.h)(0x64BF8276)
 I (..\Core\Inc\main.h)(0x64BF853F)
@@ -563,11 +563,11 @@ I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_flash.h)(0x64971CFA)
 I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_flash_ex.h)(0x64971CFA)
 I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_pwr.h)(0x64971CFA)
 I (..\Core\Inc\gpio.h)(0x64BF7EDF)
-I (include\type\type.h)(0x64C0CC61)
-F (.\include\type\type.h)(0x64C0CC61)()
+I (include\type\type.h)(0x64C16EA4)
+F (.\include\type\type.h)(0x64C16EA4)()
 F (.\include\Header\include.h)(0x64BF78C3)()
 F (.\include\Header\includecpp.h)(0x64BF8276)()
-F (.\include\type\move.cpp)(0x64C0D0BC)(-xc++ -std=c++11 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar -fno-exceptions-gdwarf-4 -O3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ./include -I ./include/Header -I ./include/type-I./RTE/_C8T6_CPP-ID:/Keil5/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-ID:/Keil5/Packs/Keil/STM32F1xx_DFP/2.3.0/Device/Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB-o c8t6_cpp/move.o -MD)
+F (.\include\type\move.cpp)(0x64C16CF6)(-xc++ -std=c++11 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar -fno-exceptions-gdwarf-4 -O3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ./include -I ./include/Header -I ./include/type-I./RTE/_C8T6_CPP-ID:/Keil5/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-ID:/Keil5/Packs/Keil/STM32F1xx_DFP/2.3.0/Device/Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB-o c8t6_cpp/move.o -MD)
 I (include\Header\includecpp.h)(0x64BF8276)
 I (..\Core\Inc\main.h)(0x64BF853F)
 I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal.h)(0x64971CFA)
@@ -600,4 +600,4 @@ I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_flash.h)(0x64971CFA)
 I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_flash_ex.h)(0x64971CFA)
 I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_pwr.h)(0x64971CFA)
 I (..\Core\Inc\gpio.h)(0x64BF7EDF)
-I (include\type\type.h)(0x64C0CC61)
+I (include\type\type.h)(0x64C16EA4)

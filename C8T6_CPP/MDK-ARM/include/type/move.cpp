@@ -42,28 +42,35 @@ void Car_move_Setting::move_all(unsigned char move_Mod, mottor_MOVE_Setting mott
             break;
             //小车整体右转
         case 4:
-            mottor1_mod=2;
-            mottor2_mod=2;
-            mottor3_mod=1;
-            mottor4_mod=1;
+            mottor1_mod = 2;
+            mottor2_mod = 2;
+            mottor3_mod = 1;
+            mottor4_mod = 1;
             break;
         case 5:
             //小车整体左移
-            mottor1_mod=2;
-            mottor2_mod=1;
-            mottor3_mod=2;
-            mottor4_mod=1;
+            mottor1_mod = 2;
+            mottor2_mod = 1;
+            mottor3_mod = 2;
+            mottor4_mod = 1;
             break;
             //小车整体右移
         case 6:
-            mottor1_mod=1;
-            mottor2_mod=2;
-            mottor3_mod=1;
-            mottor4_mod=2;
+            mottor1_mod = 1;
+            mottor2_mod = 2;
+            mottor3_mod = 1;
+            mottor4_mod = 2;
             break;
     }
     mottor_Move.move_Single(1, mottor1_mod);
     mottor_Move.move_Single(2, mottor2_mod);
     mottor_Move.move_Single(3, mottor3_mod);
     mottor_Move.move_Single(4, mottor4_mod);
+}
+
+void Car_move_Setting::PWM_Speed_all(PWM_Setting PWM, mottor_MOVE_Setting PWM_Speed_Single) {
+    PWM_Speed_Single.PWM_Speed_Write(1, PWM);
+    PWM_Speed_Single.PWM_Speed_Write(2, PWM);
+    PWM_Speed_Single.PWM_Speed_Write(3, PWM);
+    PWM_Speed_Single.PWM_Speed_Write(4, PWM);
 }
