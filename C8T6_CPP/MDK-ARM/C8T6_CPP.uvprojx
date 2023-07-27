@@ -525,6 +525,11 @@
               <FileType>5</FileType>
               <FilePath>.\include\Header\includecpp.h</FilePath>
             </File>
+            <File>
+              <FileName>move.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>.\include\type\move.cpp</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
