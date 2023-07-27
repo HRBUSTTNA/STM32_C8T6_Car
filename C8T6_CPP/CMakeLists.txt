@@ -67,7 +67,6 @@ include_directories(MDK-ARM/RTE)
 include_directories(MDK-ARM/RTE/_C8T6_CPP)
 
 add_executable(C8T6_CPP
-        .idea/workspace.xml
         Core/Inc/gpio.h
         Core/Inc/main.h
         Core/Inc/stm32f1xx_hal_conf.h
@@ -754,11 +753,6 @@ add_executable(C8T6_CPP
         Drivers/CMSIS/Include/mpu_armv7.h
         Drivers/CMSIS/Include/mpu_armv8.h
         Drivers/CMSIS/Include/tz_context.h
-        Drivers/CMSIS/Lib/ARM/arm_cortexM3b_math.lib
-        Drivers/CMSIS/Lib/ARM/arm_cortexM3l_math.lib
-        Drivers/CMSIS/Lib/GCC/libarm_cortexM3l_math.a
-        Drivers/CMSIS/Lib/IAR/iar_cortexM3b_math.a
-        Drivers/CMSIS/Lib/IAR/iar_cortexM3l_math.a
         Drivers/CMSIS/NN/Examples/ARM/arm_nn_examples/cifar10/RTE/_ARMCM0/RTE_Components.h
         Drivers/CMSIS/NN/Examples/ARM/arm_nn_examples/cifar10/RTE/_ARMCM3/RTE_Components.h
         Drivers/CMSIS/NN/Examples/ARM/arm_nn_examples/cifar10/RTE/_ARMCM4_FP/RTE_Components.h
@@ -984,16 +978,12 @@ add_executable(C8T6_CPP
         MDK-ARM/C8T6_CPP/C8T6_CPP.map
         MDK-ARM/C8T6_CPP/C8T6_CPP.sct
         MDK-ARM/C8T6_CPP/C8T6_CPP_C8T6_CPP.dep
-        MDK-ARM/C8T6_CPP/cmain.d
-        MDK-ARM/C8T6_CPP/cmain.o
         MDK-ARM/C8T6_CPP/cppmain.d
         MDK-ARM/C8T6_CPP/cppmain.o
         MDK-ARM/C8T6_CPP/gpio.d
         MDK-ARM/C8T6_CPP/gpio.o
         MDK-ARM/C8T6_CPP/main.d
         MDK-ARM/C8T6_CPP/main.o
-        MDK-ARM/C8T6_CPP/move.d
-        MDK-ARM/C8T6_CPP/move.o
         MDK-ARM/C8T6_CPP/startup_stm32f103xb.o
         MDK-ARM/C8T6_CPP/stm32f1xx_hal.d
         MDK-ARM/C8T6_CPP/stm32f1xx_hal.o
@@ -1043,4 +1033,4 @@ add_executable(C8T6_CPP
         MDK-ARM/C8T6_CPP.uvprojx
         MDK-ARM/startup_stm32f103xb.s
         .mxproject
-        C8T6_CPP.ioc MDK-ARM/include/type/move.cpp)
+        C8T6_CPP.ioc)

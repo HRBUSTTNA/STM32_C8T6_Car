@@ -21,13 +21,18 @@
 
 Car_Setting Car;
 
+PWM_Setting *PWM_P;
+
 void cpp_main() {
+    PWM_P = &Car.PWM;
+    Car.PWM.Now_Time = 0;
     Car.PWM.Change_Num = 2;
     Car.PWM.Max_Num = 10;
-    Car.PWM.Now_Time = 0;
 }
 
 void cpp_while_main() {
-    Car.Car_Move.PWM_Speed_all(Car.PWM,Car.mottor_Move);
-    Car.Car_Move.move_all(MOVE_MOD,Car.mottor_Move);
+    PWM_P->Now_Time++;//示例，Car.PWM.Now_Time自加（验证过可以这么写）如果不需要修改PWM相关参数，那么就直接传送Car.PWM即可
+    //Car.PWM.Now_Time++;
+    Car.Car_Move.PWM_Speed_all(Car.PWM, Car.mottor_Move);
+    Car.Car_Move.move_all(MOVE_MOD, Car.mottor_Move);
 }
