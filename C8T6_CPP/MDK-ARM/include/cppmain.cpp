@@ -2,7 +2,7 @@
 #include "includecpp.h"//CPP写的函数一定要在这个文件里声明，不要到include.h中声明！
 
 //注意！当你在Clion当中发现它提示的错误，请忽略，这是因为他无法成功找到uint16和GPIOC的原因
-//如果项目真有错误，请以Keil5上的为准
+//如果项目真有错误，请以Keil5上的为准,写这个程序的Keil5版本是V6.18(V6.19也可以，需要重新编译)
 //或者如果你十分讨厌这个错误提示，请添加一下头文件，并且在用keil编译的时候将其删除！
 //#include "stdint.h"
 //#include "stm32f1xx_hal_conf.h"
@@ -23,6 +23,7 @@ Car_Setting Car;
 
 PWM_Setting *PWM_P;
 
+//主初始化函数
 void cpp_main() {
     PWM_P = &Car.PWM;
     Car.PWM.Now_Time = 0;
@@ -30,9 +31,20 @@ void cpp_main() {
     Car.PWM.Max_Num = 10;
 }
 
+//主循环函数
 void cpp_while_main() {
-    PWM_P->Now_Time++;//示例，Car.PWM.Now_Time自加（验证过可以这么写）如果不需要修改PWM相关参数，那么就直接传送Car.PWM即可
+    //PWM_P->Now_Time++;//示例，Car.PWM.Now_Time自加（验证过可以这么写）如果不需要修改PWM相关参数，那么就直接传送Car.PWM即可
     //Car.PWM.Now_Time++;
     Car.Car_Move.PWM_Speed_all(Car.PWM, Car.mottor_Move);
     Car.Car_Move.move_all(MOVE_MOD, Car.mottor_Move);
+}
+
+//定时器响应函数
+void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim) {
+    if (htim->Instance == htim2.Instance) {
+        Car.PWM.Now_Time++;
+        if (Car.PWM.Now_Time == Car.PWM.Max_Num) {
+            Car.PWM.Now_Time = 0;
+        }
+    }
 }
