@@ -29,6 +29,7 @@ void cpp_main() {
     Car.PWM.Now_Time = 0;
     Car.PWM.Change_Num = 2;
     Car.PWM.Max_Num = 10;
+    HAL_TIM_Base_Start_IT(&htim2);
 }
 
 //主循环函数
