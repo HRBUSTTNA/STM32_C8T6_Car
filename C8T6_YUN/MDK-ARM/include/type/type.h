@@ -13,13 +13,14 @@ public:
     unsigned char Angle_Max;//允许的角度最大值数
     unsigned char Angle_Min;//允许的角度最小值数
     unsigned char TIM_Num;//当前定时器计数
+    unsigned char Angle_Mod;//当前云台移动模式
 };
 
 //云台移动相关函数
 class YUN_MOVE_Setting {
 public:
     void YUN_MOVE(YUN_Val Val);//云台移动实现函数
-    void YUN_CHANGE_NUM(YUN_Val Val, unsigned char Change_Num);//云台参数修改函数
+    void YUN_CHANGE_NUM(YUN_Val* Val);//云台参数修改函数
 };
 
 //云台类

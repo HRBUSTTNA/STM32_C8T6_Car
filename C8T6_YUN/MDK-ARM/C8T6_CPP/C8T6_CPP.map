@@ -541,14 +541,14 @@ Section Cross References
     cppmain.o(.ARM.exidx.text.cpp_main) refers to cppmain.o(.text.cpp_main) for [Anonymous Symbol]
     cppmain.o(.text.cpp_while_main) refers to cppmain.o(.bss.YUN_TAI) for YUN_TAI
     cppmain.o(.text.cpp_while_main) refers to data.o(.text._ZN16YUN_MOVE_Setting8YUN_MOVEE7YUN_Val) for YUN_MOVE_Setting::YUN_MOVE(YUN_Val)
-    cppmain.o(.text.cpp_while_main) refers to data.o(.text._ZN16YUN_MOVE_Setting14YUN_CHANGE_NUME7YUN_Valh) for YUN_MOVE_Setting::YUN_CHANGE_NUM(YUN_Val, unsigned char)
+    cppmain.o(.text.cpp_while_main) refers to data.o(.text._ZN16YUN_MOVE_Setting14YUN_CHANGE_NUMEP7YUN_Val) for YUN_MOVE_Setting::YUN_CHANGE_NUM(YUN_Val*)
     cppmain.o(.ARM.exidx.text.cpp_while_main) refers to cppmain.o(.text.cpp_while_main) for [Anonymous Symbol]
     cppmain.o(.text.HAL_TIM_PeriodElapsedCallback) refers to tim.o(.bss.htim2) for htim2
     cppmain.o(.text.HAL_TIM_PeriodElapsedCallback) refers to cppmain.o(.bss.YUN_TAI) for YUN_TAI
     cppmain.o(.ARM.exidx.text.HAL_TIM_PeriodElapsedCallback) refers to cppmain.o(.text.HAL_TIM_PeriodElapsedCallback) for [Anonymous Symbol]
     data.o(.text._ZN16YUN_MOVE_Setting8YUN_MOVEE7YUN_Val) refers to stm32f1xx_hal_gpio.o(.text.HAL_GPIO_WritePin) for HAL_GPIO_WritePin
     data.o(.ARM.exidx.text._ZN16YUN_MOVE_Setting8YUN_MOVEE7YUN_Val) refers to data.o(.text._ZN16YUN_MOVE_Setting8YUN_MOVEE7YUN_Val) for [Anonymous Symbol]
-    data.o(.ARM.exidx.text._ZN16YUN_MOVE_Setting14YUN_CHANGE_NUME7YUN_Valh) refers to data.o(.text._ZN16YUN_MOVE_Setting14YUN_CHANGE_NUME7YUN_Valh) for [Anonymous Symbol]
+    data.o(.ARM.exidx.text._ZN16YUN_MOVE_Setting14YUN_CHANGE_NUMEP7YUN_Val) refers to data.o(.text._ZN16YUN_MOVE_Setting14YUN_CHANGE_NUMEP7YUN_Val) for [Anonymous Symbol]
     __main.o(!!!main) refers to __rtentry.o(.ARM.Collect$$rtentry$$00000000) for __rt_entry
     __rtentry.o(.ARM.Collect$$rtentry$$00000000) refers (Special) to __rtentry2.o(.ARM.Collect$$rtentry$$0000000A) for __rt_entry_li
     __rtentry.o(.ARM.Collect$$rtentry$$00000000) refers (Special) to __rtentry2.o(.ARM.Collect$$rtentry$$0000000D) for __rt_entry_main
@@ -1245,7 +1245,7 @@ Removing Unused input sections from the image.
     Removing cppmain.o(.ARM.exidx.text.HAL_TIM_PeriodElapsedCallback), (8 bytes).
     Removing data.o(.text), (0 bytes).
     Removing data.o(.ARM.exidx.text._ZN16YUN_MOVE_Setting8YUN_MOVEE7YUN_Val), (8 bytes).
-    Removing data.o(.ARM.exidx.text._ZN16YUN_MOVE_Setting14YUN_CHANGE_NUME7YUN_Valh), (8 bytes).
+    Removing data.o(.ARM.exidx.text._ZN16YUN_MOVE_Setting14YUN_CHANGE_NUMEP7YUN_Val), (8 bytes).
 
 586 unused section(s) (total 30752 bytes) removed from the image.
 
@@ -1427,15 +1427,15 @@ Image Symbol Table
     [Anonymous Symbol]                       0x08001230   Section        0  system_stm32f1xx.o(.text.SystemInit)
     [Anonymous Symbol]                       0x08001234   Section        0  stm32f1xx_it.o(.text.TIM2_IRQHandler)
     [Anonymous Symbol]                       0x08001240   Section        0  stm32f1xx_it.o(.text.UsageFault_Handler)
-    [Anonymous Symbol]                       0x08001244   Section        0  data.o(.text._ZN16YUN_MOVE_Setting14YUN_CHANGE_NUME7YUN_Valh)
-    [Anonymous Symbol]                       0x08001248   Section        0  data.o(.text._ZN16YUN_MOVE_Setting8YUN_MOVEE7YUN_Val)
-    [Anonymous Symbol]                       0x08001268   Section        0  cppmain.o(.text.cpp_main)
-    [Anonymous Symbol]                       0x08001288   Section        0  cppmain.o(.text.cpp_while_main)
-    [Anonymous Symbol]                       0x080012b0   Section        0  main.o(.text.main)
-    HAL_RCC_GetSysClockFreq.aPredivFactorTable 0x08001332   Data           2  stm32f1xx_hal_rcc.o(.rodata.HAL_RCC_GetSysClockFreq.aPredivFactorTable)
-    [Anonymous Symbol]                       0x08001332   Section        0  stm32f1xx_hal_rcc.o(.rodata.HAL_RCC_GetSysClockFreq.aPredivFactorTable)
-    HAL_RCC_GetSysClockFreq.aPLLMULFactorTable 0x08001334   Data          16  stm32f1xx_hal_rcc.o(.rodata.cst16)
-    [Anonymous Symbol]                       0x08001334   Section        0  stm32f1xx_hal_rcc.o(.rodata.cst16)
+    [Anonymous Symbol]                       0x08001244   Section        0  data.o(.text._ZN16YUN_MOVE_Setting14YUN_CHANGE_NUMEP7YUN_Val)
+    [Anonymous Symbol]                       0x08001278   Section        0  data.o(.text._ZN16YUN_MOVE_Setting8YUN_MOVEE7YUN_Val)
+    [Anonymous Symbol]                       0x08001298   Section        0  cppmain.o(.text.cpp_main)
+    [Anonymous Symbol]                       0x080012bc   Section        0  cppmain.o(.text.cpp_while_main)
+    [Anonymous Symbol]                       0x080012e0   Section        0  main.o(.text.main)
+    HAL_RCC_GetSysClockFreq.aPredivFactorTable 0x08001362   Data           2  stm32f1xx_hal_rcc.o(.rodata.HAL_RCC_GetSysClockFreq.aPredivFactorTable)
+    [Anonymous Symbol]                       0x08001362   Section        0  stm32f1xx_hal_rcc.o(.rodata.HAL_RCC_GetSysClockFreq.aPredivFactorTable)
+    HAL_RCC_GetSysClockFreq.aPLLMULFactorTable 0x08001364   Data          16  stm32f1xx_hal_rcc.o(.rodata.cst16)
+    [Anonymous Symbol]                       0x08001364   Section        0  stm32f1xx_hal_rcc.o(.rodata.cst16)
     .L_MergedGlobals                         0x20000000   Data           8  stm32f1xx_hal.o(.data..L_MergedGlobals)
     [Anonymous Symbol]                       0x20000000   Section        0  stm32f1xx_hal.o(.data..L_MergedGlobals)
     .bss                                     0x20000010   Section       96  libspace.o(.bss)
@@ -1628,19 +1628,19 @@ Image Symbol Table
     SystemInit                               0x08001231   Thumb Code     2  system_stm32f1xx.o(.text.SystemInit)
     TIM2_IRQHandler                          0x08001235   Thumb Code    12  stm32f1xx_it.o(.text.TIM2_IRQHandler)
     UsageFault_Handler                       0x08001241   Thumb Code     2  stm32f1xx_it.o(.text.UsageFault_Handler)
-    YUN_MOVE_Setting::YUN_CHANGE_NUM(YUN_Val, unsigned char) 0x08001245   Thumb Code     2  data.o(.text._ZN16YUN_MOVE_Setting14YUN_CHANGE_NUME7YUN_Valh)
-    YUN_MOVE_Setting::YUN_MOVE(YUN_Val)      0x08001249   Thumb Code    32  data.o(.text._ZN16YUN_MOVE_Setting8YUN_MOVEE7YUN_Val)
-    cpp_main                                 0x08001269   Thumb Code    30  cppmain.o(.text.cpp_main)
-    cpp_while_main                           0x08001289   Thumb Code    38  cppmain.o(.text.cpp_while_main)
-    main                                     0x080012b1   Thumb Code   114  main.o(.text.main)
-    AHBPrescTable                            0x08001322   Data          16  system_stm32f1xx.o(.rodata.AHBPrescTable)
-    Region$$Table$$Base                      0x08001344   Number         0  anon$$obj.o(Region$$Table)
-    Region$$Table$$Limit                     0x08001364   Number         0  anon$$obj.o(Region$$Table)
+    YUN_MOVE_Setting::YUN_CHANGE_NUM(YUN_Val*) 0x08001245   Thumb Code    50  data.o(.text._ZN16YUN_MOVE_Setting14YUN_CHANGE_NUMEP7YUN_Val)
+    YUN_MOVE_Setting::YUN_MOVE(YUN_Val)      0x08001279   Thumb Code    32  data.o(.text._ZN16YUN_MOVE_Setting8YUN_MOVEE7YUN_Val)
+    cpp_main                                 0x08001299   Thumb Code    34  cppmain.o(.text.cpp_main)
+    cpp_while_main                           0x080012bd   Thumb Code    34  cppmain.o(.text.cpp_while_main)
+    main                                     0x080012e1   Thumb Code   114  main.o(.text.main)
+    AHBPrescTable                            0x08001352   Data          16  system_stm32f1xx.o(.rodata.AHBPrescTable)
+    Region$$Table$$Base                      0x08001374   Number         0  anon$$obj.o(Region$$Table)
+    Region$$Table$$Limit                     0x08001394   Number         0  anon$$obj.o(Region$$Table)
     uwTickFreq                               0x20000000   Data           1  stm32f1xx_hal.o(.data..L_MergedGlobals)
     uwTickPrio                               0x20000004   Data           4  stm32f1xx_hal.o(.data..L_MergedGlobals)
     SystemCoreClock                          0x20000008   Data           4  system_stm32f1xx.o(.data.SystemCoreClock)
     __libspace_start                         0x20000010   Data          96  libspace.o(.bss)
-    YUN_TAI                                  0x20000070   Data           6  cppmain.o(.bss.YUN_TAI)
+    YUN_TAI                                  0x20000070   Data           7  cppmain.o(.bss.YUN_TAI)
     __temporary_stack_top$libspace           0x20000070   Data           0  libspace.o(.bss)
     htim2                                    0x20000078   Data          72  tim.o(.bss.htim2)
     uwTick                                   0x200000c0   Data           4  stm32f1xx_hal.o(.bss.uwTick)
@@ -1653,9 +1653,9 @@ Memory Map of the image
 
   Image Entry point : 0x080000ed
 
-  Load Region LR_IROM1 (Base: 0x08000000, Size: 0x00001378, Max: 0x00010000, ABSOLUTE)
+  Load Region LR_IROM1 (Base: 0x08000000, Size: 0x000013a8, Max: 0x00010000, ABSOLUTE)
 
-    Execution Region ER_IROM1 (Exec base: 0x08000000, Load base: 0x08000000, Size: 0x00001364, Max: 0x00010000, ABSOLUTE)
+    Execution Region ER_IROM1 (Exec base: 0x08000000, Load base: 0x08000000, Size: 0x00001394, Max: 0x00010000, ABSOLUTE)
 
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
@@ -1785,33 +1785,33 @@ Memory Map of the image
     0x08001234   0x08001234   0x0000000c   Code   RO           67    .text.TIM2_IRQHandler  stm32f1xx_it.o
     0x08001240   0x08001240   0x00000002   Code   RO           57    .text.UsageFault_Handler  stm32f1xx_it.o
     0x08001242   0x08001242   0x00000002   PAD
-    0x08001244   0x08001244   0x00000002   Code   RO          783    .text._ZN16YUN_MOVE_Setting14YUN_CHANGE_NUME7YUN_Valh  data.o
-    0x08001246   0x08001246   0x00000002   PAD
-    0x08001248   0x08001248   0x00000020   Code   RO          781    .text._ZN16YUN_MOVE_Setting8YUN_MOVEE7YUN_Val  data.o
-    0x08001268   0x08001268   0x0000001e   Code   RO          766    .text.cpp_main      cppmain.o
-    0x08001286   0x08001286   0x00000002   PAD
-    0x08001288   0x08001288   0x00000026   Code   RO          768    .text.cpp_while_main  cppmain.o
-    0x080012ae   0x080012ae   0x00000002   PAD
-    0x080012b0   0x080012b0   0x00000072   Code   RO           11    .text.main          main.o
-    0x08001322   0x08001322   0x00000010   Data   RO          756    .rodata.AHBPrescTable  system_stm32f1xx.o
-    0x08001332   0x08001332   0x00000002   Data   RO          507    .rodata.HAL_RCC_GetSysClockFreq.aPredivFactorTable  stm32f1xx_hal_rcc.o
-    0x08001334   0x08001334   0x00000010   Data   RO          506    .rodata.cst16       stm32f1xx_hal_rcc.o
-    0x08001344   0x08001344   0x00000020   Data   RO          960    Region$$Table       anon$$obj.o
+    0x08001244   0x08001244   0x00000032   Code   RO          783    .text._ZN16YUN_MOVE_Setting14YUN_CHANGE_NUMEP7YUN_Val  data.o
+    0x08001276   0x08001276   0x00000002   PAD
+    0x08001278   0x08001278   0x00000020   Code   RO          781    .text._ZN16YUN_MOVE_Setting8YUN_MOVEE7YUN_Val  data.o
+    0x08001298   0x08001298   0x00000022   Code   RO          766    .text.cpp_main      cppmain.o
+    0x080012ba   0x080012ba   0x00000002   PAD
+    0x080012bc   0x080012bc   0x00000022   Code   RO          768    .text.cpp_while_main  cppmain.o
+    0x080012de   0x080012de   0x00000002   PAD
+    0x080012e0   0x080012e0   0x00000072   Code   RO           11    .text.main          main.o
+    0x08001352   0x08001352   0x00000010   Data   RO          756    .rodata.AHBPrescTable  system_stm32f1xx.o
+    0x08001362   0x08001362   0x00000002   Data   RO          507    .rodata.HAL_RCC_GetSysClockFreq.aPredivFactorTable  stm32f1xx_hal_rcc.o
+    0x08001364   0x08001364   0x00000010   Data   RO          506    .rodata.cst16       stm32f1xx_hal_rcc.o
+    0x08001374   0x08001374   0x00000020   Data   RO          960    Region$$Table       anon$$obj.o
 
 
-    Execution Region RW_IRAM1 (Exec base: 0x20000000, Load base: 0x08001368, Size: 0x000006c8, Max: 0x00005000, ABSOLUTE)
+    Execution Region RW_IRAM1 (Exec base: 0x20000000, Load base: 0x08001398, Size: 0x000006c8, Max: 0x00005000, ABSOLUTE)
 
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
-    0x20000000   0x08001368   0x00000008   Data   RW          469    .data..L_MergedGlobals  stm32f1xx_hal.o
-    0x20000008   0x08001370   0x00000004   Data   RW          755    .data.SystemCoreClock  system_stm32f1xx.o
-    0x2000000c   0x08001374   0x00000004   PAD
+    0x20000000   0x08001398   0x00000008   Data   RW          469    .data..L_MergedGlobals  stm32f1xx_hal.o
+    0x20000008   0x080013a0   0x00000004   Data   RW          755    .data.SystemCoreClock  system_stm32f1xx.o
+    0x2000000c   0x080013a4   0x00000004   PAD
     0x20000010        -       0x00000060   Zero   RW          825    .bss                c_w.l(libspace.o)
-    0x20000070        -       0x00000006   Zero   RW          772    .bss.YUN_TAI        cppmain.o
-    0x20000076   0x08001374   0x00000002   PAD
+    0x20000070        -       0x00000007   Zero   RW          772    .bss.YUN_TAI        cppmain.o
+    0x20000077   0x080013a4   0x00000001   PAD
     0x20000078        -       0x00000048   Zero   RW           40    .bss.htim2          tim.o
     0x200000c0        -       0x00000004   Zero   RW          468    .bss.uwTick         stm32f1xx_hal.o
-    0x200000c4   0x08001374   0x00000004   PAD
+    0x200000c4   0x080013a4   0x00000004   PAD
     0x200000c8        -       0x00000200   Zero   RW            2    HEAP                startup_stm32f103xb.o
     0x200002c8        -       0x00000400   Zero   RW            1    STACK               startup_stm32f103xb.o
 
@@ -1823,8 +1823,8 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Object Name
 
-       112          0          0          0          6       4383   cppmain.o
-        34          0          0          0          0       2780   data.o
+       112          0          0          0          7       4395   cppmain.o
+        82          0          0          0          0       2882   data.o
        174          0          0          0          0       1573   gpio.o
        124          0          0          0          0       1879   main.o
         64         26        236          0       1536        796   startup_stm32f103xb.o
@@ -1840,9 +1840,9 @@ Image component sizes
        178          0          0          0         72       5782   tim.o
 
     ----------------------------------------------------------------------
-      4382         48        302         12       1628     126609   Object Totals
+      4430         48        302         12       1628     126723   Object Totals
          0          0         32          0          0          0   (incl. Generated)
-        60          0          0          0         10          0   (incl. Padding)
+        60          0          0          0          9          0   (incl. Padding)
 
     ----------------------------------------------------------------------
 
@@ -1889,15 +1889,15 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
 
-      4662         64        302         12       1724     126825   Grand Totals
-      4662         64        302         12       1724     126825   ELF Image Totals
-      4662         64        302         12          0          0   ROM Totals
+      4710         64        302         12       1724     126939   Grand Totals
+      4710         64        302         12       1724     126939   ELF Image Totals
+      4710         64        302         12          0          0   ROM Totals
 
 ==============================================================================
 
-    Total RO  Size (Code + RO Data)                 4964 (   4.85kB)
+    Total RO  Size (Code + RO Data)                 5012 (   4.89kB)
     Total RW  Size (RW Data + ZI Data)              1736 (   1.70kB)
-    Total ROM Size (Code + RO Data + RW Data)       4976 (   4.86kB)
+    Total ROM Size (Code + RO Data + RW Data)       5024 (   4.91kB)
 
 ==============================================================================
 

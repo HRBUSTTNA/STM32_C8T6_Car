@@ -13,20 +13,20 @@ void YUN_MOVE_Setting::YUN_MOVE(YUN_Val Val) {
 }
 
 //云台参数修改函数
-void YUN_MOVE_Setting::YUN_CHANGE_NUM(YUN_Val Val, unsigned char Change_Num) {
-    switch (Change_Num) {
+void YUN_MOVE_Setting::YUN_CHANGE_NUM(YUN_Val *Val) {
+    switch (Val->Angle_Mod) {
         case 0://停止时什么都不做
             break;
         case 1://左转时当前角度要减少
-            Val.Angle_Num--;
-            if (Val.Angle_Num <= Val.Angle_Min) {
-                Val.Angle_Num = Val.Angle_Min;
+            Val->Angle_Num--;
+            if (Val->Angle_Num < Val->Angle_Min) {
+                Val->Angle_Num = Val->Angle_Min;
             }//防止越界
             break;
         case 2://右转时当前角度要增加
-            Val.Angle_Num++;
-            if (Val.Angle_Num >= Val.Angle_Max) {
-                Val.Angle_Num = Val.Angle_Max;
+            Val->Angle_Num++;
+            if (Val->Angle_Num > Val->Angle_Max) {
+                Val->Angle_Num = Val->Angle_Max;
             }//防止越界
             break;
     }

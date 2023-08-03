@@ -18,12 +18,14 @@ void cpp_main() {
     YUN_TAI.Val.Angle_Max = 25;//设定允许转动最大角度为2.5ms
     YUN_TAI.Val.Angle_Min = 5;//设定允许转动最小角度为0.5ms
     YUN_TAI.Val.Angle_Num = 15;//设定初始值为0度，为1.5ms
+    YUN_TAI.Val.TIM_Num=0;
+    YUN_TAI.Val.Angle_Mod = CHANGE_MOD;
     HAL_TIM_Base_Start_IT(&htim2);//启动定时器
 }
 
 void cpp_while_main() {
     YUN_TAI.Move.YUN_MOVE(YUN_TAI.Val);//云台移动函数
-    YUN_TAI.Move.YUN_CHANGE_NUM(YUN_TAI.Val, CHANGE_MOD);//云台移动参数修改函数
+    YUN_TAI.Move.YUN_CHANGE_NUM(&YUN_TAI.Val);//云台移动参数修改函数
 }
 
 void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim) {
