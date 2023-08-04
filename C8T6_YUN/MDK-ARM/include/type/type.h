@@ -8,12 +8,13 @@
 //云台相关参数
 class YUN_Val {
 public:
-    unsigned char Max_Num;//定时器应该达到的最大值200
+    int Max_Num;//定时器应该达到的最大值200
     unsigned char Angle_Num;//当前角度值
     unsigned char Angle_Max;//允许的角度最大值数
     unsigned char Angle_Min;//允许的角度最小值数
     unsigned char TIM_Num;//当前定时器计数
     unsigned char Angle_Mod;//当前云台移动模式
+    unsigned char YUN_TAI_Mod;//云台的模式(上下和左右)
 };
 
 //云台移动相关函数
