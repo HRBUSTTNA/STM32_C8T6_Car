@@ -5,10 +5,21 @@
 
 //云台移动实现函数
 void YUN_MOVE_Setting::YUN_MOVE(YUN_Val Val) {
-    if (Val.TIM_Num <= Val.Angle_Num) {
-        HAL_GPIO_WritePin(Yun_GPIO_Port, Yun_Pin, GPIO_PIN_SET);
-    } else {
-        HAL_GPIO_WritePin(Yun_GPIO_Port, Yun_Pin, GPIO_PIN_RESET);
+    //左右控制
+    if (Val.YUN_TAI_Mod == 1) {
+        if (Val.TIM_Num <= Val.Angle_Num) {
+            HAL_GPIO_WritePin(Yun_GPIO_LEFT_AND_RIGHT_GPIO_Port, Yun_GPIO_LEFT_AND_RIGHT_Pin, GPIO_PIN_SET);
+        } else {
+            HAL_GPIO_WritePin(Yun_GPIO_LEFT_AND_RIGHT_GPIO_Port, Yun_GPIO_LEFT_AND_RIGHT_Pin, GPIO_PIN_RESET);
+        }
+    }
+    //上下控制
+    if (Val.YUN_TAI_Mod == 2) {
+        if (Val.TIM_Num <= Val.Angle_Num) {
+            HAL_GPIO_WritePin(Yun_GPIO_UP_AND_DOWN_GPIO_Port, Yun_GPIO_UP_AND_DOWN_Pin, GPIO_PIN_SET);
+        } else {
+            HAL_GPIO_WritePin(Yun_GPIO_UP_AND_DOWN_GPIO_Port, Yun_GPIO_UP_AND_DOWN_Pin, GPIO_PIN_RESET);
+        }
     }
 }
 
