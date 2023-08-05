@@ -8,9 +8,10 @@
 //#include "stm32f1xx_hal_conf.h"
 
 //定义控制电机移动的模式(可以进行修改)
-#define MOVE_MOD MOVE_STOP
+//#define MOVE_MOD MOVE_STOP
 
 //对具体的移动行为进行定义
+/*
 #define MOVE_STOP 0
 #define MOVE_UP 1
 #define MOVE_DOWN 2
@@ -18,14 +19,15 @@
 #define MOVE_RIGHT 4
 #define MOVE_LEFT_MEAN 5
 #define MOVE_RIGHT_MEAN 6
+*/
 
 Car_Setting Car;
-
-PWM_Setting *PWM_P;
+GW_Setting GW;
+//PWM_Setting *PWM_P;
 
 //主初始化函数
 void cpp_main() {
-    PWM_P = &Car.PWM;
+    //PWM_P = &Car.PWM;
     Car.PWM.Now_Time = 0;
     Car.PWM.Change_Num = 2;
     Car.PWM.Max_Num = 10;
@@ -36,8 +38,9 @@ void cpp_main() {
 void cpp_while_main() {
     //PWM_P->Now_Time++;//示例，Car.PWM.Now_Time自加（验证过可以这么写）如果不需要修改PWM相关参数，那么就直接传送Car.PWM即可
     //Car.PWM.Now_Time++;
+    GW.GW_scanf.GW_INPUT_SCANF(&GW.GW_input);
     Car.Car_Move.PWM_Speed_all(Car.PWM, Car.mottor_Move);
-    Car.Car_Move.move_all(MOVE_MOD, Car.mottor_Move);
+    GW.GW_scanf.GW_MOVE(&GW.GW_input, Car);
 }
 
 //定时器响应函数
