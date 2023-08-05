@@ -61,6 +61,7 @@ include_directories(Drivers/CMSIS/RTOS2/Template)
 include_directories(Drivers/STM32F1xx_HAL_Driver/Inc)
 include_directories(Drivers/STM32F1xx_HAL_Driver/Inc/Legacy)
 include_directories(MDK-ARM/include)
+include_directories(MDK-ARM/include/grayscale)
 include_directories(MDK-ARM/include/Header)
 include_directories(MDK-ARM/include/type)
 include_directories(MDK-ARM/RTE)
@@ -71,11 +72,13 @@ add_executable(C8T6_CPP
         Core/Inc/main.h
         Core/Inc/stm32f1xx_hal_conf.h
         Core/Inc/stm32f1xx_it.h
+        Core/Inc/tim.h
         Core/Src/gpio.c
         Core/Src/main.c
         Core/Src/stm32f1xx_hal_msp.c
         Core/Src/stm32f1xx_it.c
         Core/Src/system_stm32f1xx.c
+        Core/Src/tim.c
         Drivers/CMSIS/Core/Include/cmsis_armcc.h
         Drivers/CMSIS/Core/Include/cmsis_armclang.h
         Drivers/CMSIS/Core/Include/cmsis_compiler.h
@@ -753,6 +756,11 @@ add_executable(C8T6_CPP
         Drivers/CMSIS/Include/mpu_armv7.h
         Drivers/CMSIS/Include/mpu_armv8.h
         Drivers/CMSIS/Include/tz_context.h
+        Drivers/CMSIS/Lib/ARM/arm_cortexM3b_math.lib
+        Drivers/CMSIS/Lib/ARM/arm_cortexM3l_math.lib
+        Drivers/CMSIS/Lib/GCC/libarm_cortexM3l_math.a
+        Drivers/CMSIS/Lib/IAR/iar_cortexM3b_math.a
+        Drivers/CMSIS/Lib/IAR/iar_cortexM3l_math.a
         Drivers/CMSIS/NN/Examples/ARM/arm_nn_examples/cifar10/RTE/_ARMCM0/RTE_Components.h
         Drivers/CMSIS/NN/Examples/ARM/arm_nn_examples/cifar10/RTE/_ARMCM3/RTE_Components.h
         Drivers/CMSIS/NN/Examples/ARM/arm_nn_examples/cifar10/RTE/_ARMCM4_FP/RTE_Components.h
@@ -984,6 +992,8 @@ add_executable(C8T6_CPP
         MDK-ARM/C8T6_CPP/gpio.o
         MDK-ARM/C8T6_CPP/main.d
         MDK-ARM/C8T6_CPP/main.o
+        MDK-ARM/C8T6_CPP/move.d
+        MDK-ARM/C8T6_CPP/move.o
         MDK-ARM/C8T6_CPP/startup_stm32f103xb.o
         MDK-ARM/C8T6_CPP/stm32f1xx_hal.d
         MDK-ARM/C8T6_CPP/stm32f1xx_hal.o
@@ -1017,9 +1027,13 @@ add_executable(C8T6_CPP
         MDK-ARM/C8T6_CPP/stm32f1xx_it.o
         MDK-ARM/C8T6_CPP/system_stm32f1xx.d
         MDK-ARM/C8T6_CPP/system_stm32f1xx.o
+        MDK-ARM/C8T6_CPP/tim.d
+        MDK-ARM/C8T6_CPP/tim.o
         MDK-ARM/C8T6_CPP/type.d
         MDK-ARM/C8T6_CPP/type.o
         MDK-ARM/DebugConfig/C8T6_CPP_STM32F103C8_1.0.0.dbgconf
+        MDK-ARM/include/grayscale/grayscale_main.c
+        MDK-ARM/include/grayscale/gw_grayscale_sensor.h
         MDK-ARM/include/Header/include.h
         MDK-ARM/include/Header/includecpp.h
         MDK-ARM/include/type/move.cpp
@@ -1033,4 +1047,4 @@ add_executable(C8T6_CPP
         MDK-ARM/C8T6_CPP.uvprojx
         MDK-ARM/startup_stm32f103xb.s
         .mxproject
-        C8T6_CPP.ioc)
+        C8T6_CPP.ioc MDK-ARM/include/grayscale/Drive.cpp MDK-ARM/include/grayscale/Drive.h)

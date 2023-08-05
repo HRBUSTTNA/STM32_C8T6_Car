@@ -14,16 +14,81 @@
       <config projectName="C8T6_CPP" targetName="C8T6_CPP" />
     </generated>
   </component>
-  <component name="CMakeSettings" AUTO_RELOAD="true">
+  <component name="CMakeSettings">
     <configurations>
       <configuration PROFILE_NAME="Debug" ENABLED="true" CONFIG_NAME="Debug" />
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="457c405a-c830-47f6-becd-e6a01de9aaea" name="更改" comment="">
+    <list default="true" id="dbf03606-b78e-4794-a2df-9b0a15b3a980" name="更改" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/C8T6_CPP.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Core/Inc/usart.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Core/Src/usart.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MDK-ARM/include/grayscale/Drive.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MDK-ARM/include/grayscale/Drive.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MDK-ARM/include/grayscale/grayscale_main.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MDK-ARM/include/grayscale/gw_grayscale_sensor.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mxproject" beforeDir="false" afterPath="$PROJECT_DIR$/.mxproject" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/C8T6_CPP.ioc" beforeDir="false" afterPath="$PROJECT_DIR$/C8T6_CPP.ioc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Inc/main.h" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Inc/main.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Inc/stm32f1xx_hal_conf.h" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Inc/stm32f1xx_hal_conf.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Inc/stm32f1xx_it.h" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Inc/stm32f1xx_it.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Src/gpio.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/gpio.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Src/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/main.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Src/stm32f1xx_hal_msp.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/stm32f1xx_hal_msp.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Src/stm32f1xx_it.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/stm32f1xx_it.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MDK-ARM/C8T6_CPP.uvguix.Cossiant" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/C8T6_CPP.uvguix.Cossiant" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MDK-ARM/C8T6_CPP.uvoptx" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/C8T6_CPP.uvoptx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MDK-ARM/C8T6_CPP.uvprojx" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/C8T6_CPP.uvprojx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MDK-ARM/C8T6_CPP/C8T6_CPP.axf" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/C8T6_CPP/C8T6_CPP.axf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MDK-ARM/C8T6_CPP/C8T6_CPP.build_log.htm" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/C8T6_CPP/C8T6_CPP.build_log.htm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MDK-ARM/C8T6_CPP/C8T6_CPP.hex" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/C8T6_CPP/C8T6_CPP.hex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MDK-ARM/C8T6_CPP/C8T6_CPP.htm" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/C8T6_CPP/C8T6_CPP.htm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MDK-ARM/C8T6_CPP/C8T6_CPP.lnp" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/C8T6_CPP/C8T6_CPP.lnp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MDK-ARM/C8T6_CPP/C8T6_CPP.map" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/C8T6_CPP/C8T6_CPP.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MDK-ARM/C8T6_CPP/C8T6_CPP_C8T6_CPP.dep" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/C8T6_CPP/C8T6_CPP_C8T6_CPP.dep" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MDK-ARM/include/Header/includecpp.h" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/include/Header/includecpp.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MDK-ARM/include/cppmain.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/include/cppmain.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/cache-v2-b0dfb4f89729a55edce7.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/cmakeFiles-v1-afcbbbf5deae95009330.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-9b88360fcb1b306fcd6d.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/index-2023-08-01T12-22-08-0142.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-C8T6_CPP-Debug-5b4d7d8add516956684e.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/C8T6_CPP.cbp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.25.2/CMakeDetermineCompilerABI_C.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.25.2/CMakeDetermineCompilerABI_C.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.25.2/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.25.2/CMakeDetermineCompilerABI_CXX.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/C8T6_CPP.dir/DependInfo.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/C8T6_CPP.dir/build.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/C8T6_CPP.dir/cmake_clean.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/C8T6_CPP.dir/compiler_depend.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/C8T6_CPP.dir/compiler_depend.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/C8T6_CPP.dir/depend.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/C8T6_CPP.dir/flags.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/C8T6_CPP.dir/includes_C.rsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/C8T6_CPP.dir/includes_CXX.rsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/C8T6_CPP.dir/link.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/C8T6_CPP.dir/linkLibs.rsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/C8T6_CPP.dir/objects1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/C8T6_CPP.dir/progress.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-environment.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-environment.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C8T6_YUN/MDK-ARM/C8T6_CPP.uvguix.Cossiant" beforeDir="false" afterPath="$PROJECT_DIR$/../C8T6_YUN/MDK-ARM/C8T6_CPP.uvguix.Cossiant" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C8T6_YUN/MDK-ARM/include/cppmain.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../C8T6_YUN/MDK-ARM/include/cppmain.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C8T6_YUN/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/../C8T6_YUN/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,19 +102,34 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectId" id="2TNo3G3fl4YQP48epaO8XsgAaw8" />
+  <component name="ProjectApplicationVersion">
+    <option name="ide" value="CLion" />
+    <option name="majorVersion" value="2023" />
+    <option name="minorVersion" value="1.5" />
+  </component>
+  <component name="ProjectId" id="2TZc5hRFUAR5pTcqtR1t4EOLi99" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
     &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/GitHub_Project/STM32_C8T6_Car/C8T6_CPP&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -63,32 +143,27 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="默认任务">
-      <changelist id="457c405a-c830-47f6-becd-e6a01de9aaea" name="更改" comment="" />
-      <created>1690892519455</created>
+      <changelist id="dbf03606-b78e-4794-a2df-9b0a15b3a980" name="更改" comment="" />
+      <created>1691253862032</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1690892519455</updated>
-      <workItem from="1690892521265" duration="42000" />
-      <workItem from="1690892702513" duration="111000" />
-      <workItem from="1690978877024" duration="241000" />
-      <workItem from="1691037129447" duration="26000" />
-      <workItem from="1691037921882" duration="3000" />
-      <workItem from="1691040620325" duration="28000" />
+      <updated>1691253862032</updated>
+      <workItem from="1691253863030" duration="6156000" />
+      <workItem from="1691260135193" duration="963000" />
+      <workItem from="1691269425901" duration="2000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
+  <component name="VCPKGProject">
+    <isAutomaticEditVcpkgJson value="false" />
+    <isAutomaticCheckingOnLaunch value="false" />
+    <isAutomaticFoundErrors value="true" />
+    <isAutomaticFoundErrors value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>

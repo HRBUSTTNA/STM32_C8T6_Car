@@ -59,6 +59,14 @@ void Error_Handler(void);
 /* Private defines -----------------------------------------------------------*/
 #define LED_Pin GPIO_PIN_13
 #define LED_GPIO_Port GPIOC
+#define GW_1_Pin GPIO_PIN_0
+#define GW_1_GPIO_Port GPIOB
+#define GW_2_Pin GPIO_PIN_1
+#define GW_2_GPIO_Port GPIOB
+#define GW_3_Pin GPIO_PIN_10
+#define GW_3_GPIO_Port GPIOB
+#define GW_4_Pin GPIO_PIN_11
+#define GW_4_GPIO_Port GPIOB
 #define Right_Behind_IN1_Pin GPIO_PIN_12
 #define Right_Behind_IN1_GPIO_Port GPIOB
 #define Right_Behind_IN2_Pin GPIO_PIN_13
@@ -83,6 +91,14 @@ void Error_Handler(void);
 #define Left_Behind_IN2_GPIO_Port GPIOB
 #define Left_Behind_PWM_Pin GPIO_PIN_5
 #define Left_Behind_PWM_GPIO_Port GPIOB
+#define GW_5_Pin GPIO_PIN_6
+#define GW_5_GPIO_Port GPIOB
+#define GW_6_Pin GPIO_PIN_7
+#define GW_6_GPIO_Port GPIOB
+#define GW_7_Pin GPIO_PIN_8
+#define GW_7_GPIO_Port GPIOB
+#define GW_8_Pin GPIO_PIN_9
+#define GW_8_GPIO_Port GPIOB
 
 /* USER CODE BEGIN Private defines */
 
