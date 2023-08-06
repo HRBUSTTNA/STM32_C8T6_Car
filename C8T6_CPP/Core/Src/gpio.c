@@ -73,7 +73,7 @@ void MX_GPIO_Init(void)
   GPIO_InitStruct.Pin = GW_1_Pin|GW_2_Pin|GW_3_Pin|GW_4_Pin
                           |GW_5_Pin|GW_6_Pin|GW_7_Pin|GW_8_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
-  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  GPIO_InitStruct.Pull = GPIO_PULLUP;
   HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
 
   /*Configure GPIO pins : PBPin PBPin PBPin PBPin
