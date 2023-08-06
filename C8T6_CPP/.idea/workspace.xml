@@ -22,13 +22,6 @@
   <component name="ChangeListManager">
     <list default="true" id="dbf03606-b78e-4794-a2df-9b0a15b3a980" name="更改" comment="V0.5.1">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MDK-ARM/C8T6_CPP.uvguix.Cossiant" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/C8T6_CPP.uvguix.Cossiant" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MDK-ARM/C8T6_CPP/C8T6_CPP.axf" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/C8T6_CPP/C8T6_CPP.axf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MDK-ARM/C8T6_CPP/C8T6_CPP.build_log.htm" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/C8T6_CPP/C8T6_CPP.build_log.htm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MDK-ARM/C8T6_CPP/C8T6_CPP.hex" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/C8T6_CPP/C8T6_CPP.hex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MDK-ARM/C8T6_CPP/C8T6_CPP.htm" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/C8T6_CPP/C8T6_CPP.htm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MDK-ARM/C8T6_CPP/C8T6_CPP.map" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/C8T6_CPP/C8T6_CPP.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MDK-ARM/C8T6_CPP/C8T6_CPP_C8T6_CPP.dep" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/C8T6_CPP/C8T6_CPP_C8T6_CPP.dep" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MDK-ARM/include/grayscale/Drive.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/include/grayscale/Drive.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -92,7 +85,7 @@
       <workItem from="1691253863030" duration="6156000" />
       <workItem from="1691260135193" duration="963000" />
       <workItem from="1691269425901" duration="2000" />
-      <workItem from="1691300373974" duration="1651000" />
+      <workItem from="1691300373974" duration="3024000" />
     </task>
     <task id="LOCAL-00001" summary="V0.5.1">
       <option name="closed" value="true" />
@@ -102,7 +95,47 @@
       <option name="project" value="LOCAL" />
       <updated>1691301925964</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="V0.5.1">
+      <option name="closed" value="true" />
+      <created>1691302051286</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1691302051286</updated>
+    </task>
+    <task id="LOCAL-00003" summary="V0.5.1">
+      <option name="closed" value="true" />
+      <created>1691302323705</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1691302323705</updated>
+    </task>
+    <task id="LOCAL-00004" summary="V0.5.1">
+      <option name="closed" value="true" />
+      <created>1691302465810</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1691302465810</updated>
+    </task>
+    <task id="LOCAL-00005" summary="V0.5.1">
+      <option name="closed" value="true" />
+      <created>1691302970723</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1691302970723</updated>
+    </task>
+    <task id="LOCAL-00006" summary="V0.5.1">
+      <option name="closed" value="true" />
+      <created>1691303059208</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1691303059208</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -21,8 +21,8 @@
 #define MOVE_RIGHT_MEAN 6
 */
 
-Car_Setting Car;
-GW_Setting GW;
+Car_Setting Car;//定义小车移动和PWM的函数
+GW_Setting GW;//定义小车的输入模块
 //PWM_Setting *PWM_P;
 
 //主初始化函数
@@ -40,8 +40,8 @@ void cpp_while_main() {
     //Car.PWM.Now_Time++;
     GW.GW_scanf.GW_INPUT_SCANF(&GW.GW_input_val);//进行输入检测
     GW.GW_scanf.GW_MOVE_SCANF(&GW.GW_input_val);//对输入进行判断得出结果
-    Car.Car_Move.PWM_Speed_all(Car.PWM, Car.mottor_Move);
-    Car.Car_Move.move_all(GW.GW_input_val.GW_MOD, Car.mottor_Move);
+    Car.Car_Move.PWM_Speed_all(Car.PWM, Car.mottor_Move);//PWM参数设置函数
+    Car.Car_Move.move_all(GW.GW_input_val.GW_MOD, Car.mottor_Move);//电机移动控制函数
 }
 
 //定时器响应函数

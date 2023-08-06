@@ -1627,15 +1627,15 @@ Image Symbol Table
     [Anonymous Symbol]                       0x080014cc   Section        0  move.o(.text._ZN16Car_move_Setting8move_allEh19mottor_MOVE_Setting)
     [Anonymous Symbol]                       0x08001540   Section        0  drive.o(.text._ZN16GW_SCANF_Setting13GW_MOVE_SCANFEP16GW_INPUT_Setting)
     [Anonymous Symbol]                       0x080015a4   Section        0  drive.o(.text._ZN16GW_SCANF_Setting14GW_INPUT_SCANFEP16GW_INPUT_Setting)
-    [Anonymous Symbol]                       0x0800160c   Section        0  type.o(.text._ZN19mottor_MOVE_Setting11move_SingleEhh)
-    [Anonymous Symbol]                       0x080016d0   Section        0  type.o(.text._ZN19mottor_MOVE_Setting15PWM_Speed_WriteEh11PWM_Setting)
-    [Anonymous Symbol]                       0x0800178c   Section        0  cppmain.o(.text.cpp_main)
-    [Anonymous Symbol]                       0x080017ac   Section        0  cppmain.o(.text.cpp_while_main)
-    [Anonymous Symbol]                       0x080017e8   Section        0  main.o(.text.main)
-    HAL_RCC_GetSysClockFreq.aPredivFactorTable 0x08001876   Data           2  stm32f1xx_hal_rcc.o(.rodata.HAL_RCC_GetSysClockFreq.aPredivFactorTable)
-    [Anonymous Symbol]                       0x08001876   Section        0  stm32f1xx_hal_rcc.o(.rodata.HAL_RCC_GetSysClockFreq.aPredivFactorTable)
-    HAL_RCC_GetSysClockFreq.aPLLMULFactorTable 0x08001878   Data          16  stm32f1xx_hal_rcc.o(.rodata.cst16)
-    [Anonymous Symbol]                       0x08001878   Section        0  stm32f1xx_hal_rcc.o(.rodata.cst16)
+    [Anonymous Symbol]                       0x0800164c   Section        0  type.o(.text._ZN19mottor_MOVE_Setting11move_SingleEhh)
+    [Anonymous Symbol]                       0x08001710   Section        0  type.o(.text._ZN19mottor_MOVE_Setting15PWM_Speed_WriteEh11PWM_Setting)
+    [Anonymous Symbol]                       0x080017cc   Section        0  cppmain.o(.text.cpp_main)
+    [Anonymous Symbol]                       0x080017ec   Section        0  cppmain.o(.text.cpp_while_main)
+    [Anonymous Symbol]                       0x08001828   Section        0  main.o(.text.main)
+    HAL_RCC_GetSysClockFreq.aPredivFactorTable 0x080018b6   Data           2  stm32f1xx_hal_rcc.o(.rodata.HAL_RCC_GetSysClockFreq.aPredivFactorTable)
+    [Anonymous Symbol]                       0x080018b6   Section        0  stm32f1xx_hal_rcc.o(.rodata.HAL_RCC_GetSysClockFreq.aPredivFactorTable)
+    HAL_RCC_GetSysClockFreq.aPLLMULFactorTable 0x080018b8   Data          16  stm32f1xx_hal_rcc.o(.rodata.cst16)
+    [Anonymous Symbol]                       0x080018b8   Section        0  stm32f1xx_hal_rcc.o(.rodata.cst16)
     .L_MergedGlobals                         0x20000000   Data           8  stm32f1xx_hal.o(.data..L_MergedGlobals)
     [Anonymous Symbol]                       0x20000000   Section        0  stm32f1xx_hal.o(.data..L_MergedGlobals)
     .bss                                     0x20000010   Section       96  libspace.o(.bss)
@@ -1839,16 +1839,16 @@ Image Symbol Table
     Car_move_Setting::PWM_Speed_all(PWM_Setting, mottor_MOVE_Setting) 0x08001495   Thumb Code    54  move.o(.text._ZN16Car_move_Setting13PWM_Speed_allE11PWM_Setting19mottor_MOVE_Setting)
     Car_move_Setting::move_all(unsigned char, mottor_MOVE_Setting) 0x080014cd   Thumb Code    84  move.o(.text._ZN16Car_move_Setting8move_allEh19mottor_MOVE_Setting)
     GW_SCANF_Setting::GW_MOVE_SCANF(GW_INPUT_Setting*) 0x08001541   Thumb Code    98  drive.o(.text._ZN16GW_SCANF_Setting13GW_MOVE_SCANFEP16GW_INPUT_Setting)
-    GW_SCANF_Setting::GW_INPUT_SCANF(GW_INPUT_Setting*) 0x080015a5   Thumb Code   102  drive.o(.text._ZN16GW_SCANF_Setting14GW_INPUT_SCANFEP16GW_INPUT_Setting)
-    mottor_MOVE_Setting::move_Single(unsigned char, unsigned char) 0x0800160d   Thumb Code   194  type.o(.text._ZN19mottor_MOVE_Setting11move_SingleEhh)
-    mottor_MOVE_Setting::PWM_Speed_Write(unsigned char, PWM_Setting) 0x080016d1   Thumb Code   188  type.o(.text._ZN19mottor_MOVE_Setting15PWM_Speed_WriteEh11PWM_Setting)
-    cpp_main                                 0x0800178d   Thumb Code    30  cppmain.o(.text.cpp_main)
-    cpp_while_main                           0x080017ad   Thumb Code    58  cppmain.o(.text.cpp_while_main)
-    main                                     0x080017e9   Thumb Code   118  main.o(.text.main)
-    AHBPrescTable                            0x0800185e   Data          16  system_stm32f1xx.o(.rodata.AHBPrescTable)
-    APBPrescTable                            0x0800186e   Data           8  system_stm32f1xx.o(.rodata.APBPrescTable)
-    Region$$Table$$Base                      0x08001888   Number         0  anon$$obj.o(Region$$Table)
-    Region$$Table$$Limit                     0x080018a8   Number         0  anon$$obj.o(Region$$Table)
+    GW_SCANF_Setting::GW_INPUT_SCANF(GW_INPUT_Setting*) 0x080015a5   Thumb Code   166  drive.o(.text._ZN16GW_SCANF_Setting14GW_INPUT_SCANFEP16GW_INPUT_Setting)
+    mottor_MOVE_Setting::move_Single(unsigned char, unsigned char) 0x0800164d   Thumb Code   194  type.o(.text._ZN19mottor_MOVE_Setting11move_SingleEhh)
+    mottor_MOVE_Setting::PWM_Speed_Write(unsigned char, PWM_Setting) 0x08001711   Thumb Code   188  type.o(.text._ZN19mottor_MOVE_Setting15PWM_Speed_WriteEh11PWM_Setting)
+    cpp_main                                 0x080017cd   Thumb Code    30  cppmain.o(.text.cpp_main)
+    cpp_while_main                           0x080017ed   Thumb Code    58  cppmain.o(.text.cpp_while_main)
+    main                                     0x08001829   Thumb Code   118  main.o(.text.main)
+    AHBPrescTable                            0x0800189e   Data          16  system_stm32f1xx.o(.rodata.AHBPrescTable)
+    APBPrescTable                            0x080018ae   Data           8  system_stm32f1xx.o(.rodata.APBPrescTable)
+    Region$$Table$$Base                      0x080018c8   Number         0  anon$$obj.o(Region$$Table)
+    Region$$Table$$Limit                     0x080018e8   Number         0  anon$$obj.o(Region$$Table)
     uwTickFreq                               0x20000000   Data           1  stm32f1xx_hal.o(.data..L_MergedGlobals)
     uwTickPrio                               0x20000004   Data           4  stm32f1xx_hal.o(.data..L_MergedGlobals)
     SystemCoreClock                          0x20000008   Data           4  system_stm32f1xx.o(.data.SystemCoreClock)
@@ -1868,9 +1868,9 @@ Memory Map of the image
 
   Image Entry point : 0x080000ed
 
-  Load Region LR_IROM1 (Base: 0x08000000, Size: 0x000018b8, Max: 0x00010000, ABSOLUTE)
+  Load Region LR_IROM1 (Base: 0x08000000, Size: 0x000018f8, Max: 0x00010000, ABSOLUTE)
 
-    Execution Region ER_IROM1 (Exec base: 0x08000000, Load base: 0x08000000, Size: 0x000018a8, Max: 0x00010000, ABSOLUTE)
+    Execution Region ER_IROM1 (Exec base: 0x08000000, Load base: 0x08000000, Size: 0x000018e8, Max: 0x00010000, ABSOLUTE)
 
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
@@ -2017,33 +2017,33 @@ Memory Map of the image
     0x080014cc   0x080014cc   0x00000074   Code   RO          893    .text._ZN16Car_move_Setting8move_allEh19mottor_MOVE_Setting  move.o
     0x08001540   0x08001540   0x00000062   Code   RO          905    .text._ZN16GW_SCANF_Setting13GW_MOVE_SCANFEP16GW_INPUT_Setting  drive.o
     0x080015a2   0x080015a2   0x00000002   PAD
-    0x080015a4   0x080015a4   0x00000066   Code   RO          907    .text._ZN16GW_SCANF_Setting14GW_INPUT_SCANFEP16GW_INPUT_Setting  drive.o
-    0x0800160a   0x0800160a   0x00000002   PAD
-    0x0800160c   0x0800160c   0x000000c2   Code   RO          883    .text._ZN19mottor_MOVE_Setting11move_SingleEhh  type.o
-    0x080016ce   0x080016ce   0x00000002   PAD
-    0x080016d0   0x080016d0   0x000000bc   Code   RO          881    .text._ZN19mottor_MOVE_Setting15PWM_Speed_WriteEh11PWM_Setting  type.o
-    0x0800178c   0x0800178c   0x0000001e   Code   RO          866    .text.cpp_main      cppmain.o
-    0x080017aa   0x080017aa   0x00000002   PAD
-    0x080017ac   0x080017ac   0x0000003a   Code   RO          868    .text.cpp_while_main  cppmain.o
-    0x080017e6   0x080017e6   0x00000002   PAD
-    0x080017e8   0x080017e8   0x00000076   Code   RO           11    .text.main          main.o
-    0x0800185e   0x0800185e   0x00000010   Data   RO          856    .rodata.AHBPrescTable  system_stm32f1xx.o
-    0x0800186e   0x0800186e   0x00000008   Data   RO          857    .rodata.APBPrescTable  system_stm32f1xx.o
-    0x08001876   0x08001876   0x00000002   Data   RO          525    .rodata.HAL_RCC_GetSysClockFreq.aPredivFactorTable  stm32f1xx_hal_rcc.o
-    0x08001878   0x08001878   0x00000010   Data   RO          524    .rodata.cst16       stm32f1xx_hal_rcc.o
-    0x08001888   0x08001888   0x00000020   Data   RO         1084    Region$$Table       anon$$obj.o
+    0x080015a4   0x080015a4   0x000000a6   Code   RO          907    .text._ZN16GW_SCANF_Setting14GW_INPUT_SCANFEP16GW_INPUT_Setting  drive.o
+    0x0800164a   0x0800164a   0x00000002   PAD
+    0x0800164c   0x0800164c   0x000000c2   Code   RO          883    .text._ZN19mottor_MOVE_Setting11move_SingleEhh  type.o
+    0x0800170e   0x0800170e   0x00000002   PAD
+    0x08001710   0x08001710   0x000000bc   Code   RO          881    .text._ZN19mottor_MOVE_Setting15PWM_Speed_WriteEh11PWM_Setting  type.o
+    0x080017cc   0x080017cc   0x0000001e   Code   RO          866    .text.cpp_main      cppmain.o
+    0x080017ea   0x080017ea   0x00000002   PAD
+    0x080017ec   0x080017ec   0x0000003a   Code   RO          868    .text.cpp_while_main  cppmain.o
+    0x08001826   0x08001826   0x00000002   PAD
+    0x08001828   0x08001828   0x00000076   Code   RO           11    .text.main          main.o
+    0x0800189e   0x0800189e   0x00000010   Data   RO          856    .rodata.AHBPrescTable  system_stm32f1xx.o
+    0x080018ae   0x080018ae   0x00000008   Data   RO          857    .rodata.APBPrescTable  system_stm32f1xx.o
+    0x080018b6   0x080018b6   0x00000002   Data   RO          525    .rodata.HAL_RCC_GetSysClockFreq.aPredivFactorTable  stm32f1xx_hal_rcc.o
+    0x080018b8   0x080018b8   0x00000010   Data   RO          524    .rodata.cst16       stm32f1xx_hal_rcc.o
+    0x080018c8   0x080018c8   0x00000020   Data   RO         1084    Region$$Table       anon$$obj.o
 
 
-    Execution Region RW_IRAM1 (Exec base: 0x20000000, Load base: 0x080018a8, Size: 0x00000710, Max: 0x00005000, ABSOLUTE)
+    Execution Region RW_IRAM1 (Exec base: 0x20000000, Load base: 0x080018e8, Size: 0x00000710, Max: 0x00005000, ABSOLUTE)
 
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
-    0x20000000   0x080018a8   0x00000008   Data   RW          487    .data..L_MergedGlobals  stm32f1xx_hal.o
-    0x20000008   0x080018b0   0x00000004   Data   RW          855    .data.SystemCoreClock  system_stm32f1xx.o
-    0x2000000c   0x080018b4   0x00000004   PAD
+    0x20000000   0x080018e8   0x00000008   Data   RW          487    .data..L_MergedGlobals  stm32f1xx_hal.o
+    0x20000008   0x080018f0   0x00000004   Data   RW          855    .data.SystemCoreClock  system_stm32f1xx.o
+    0x2000000c   0x080018f4   0x00000004   PAD
     0x20000010        -       0x00000060   Zero   RW          949    .bss                c_w.l(libspace.o)
     0x20000070        -       0x0000000f   Zero   RW          872    .bss..L_MergedGlobals  cppmain.o
-    0x2000007f   0x080018b4   0x00000001   PAD
+    0x2000007f   0x080018f4   0x00000001   PAD
     0x20000080        -       0x00000048   Zero   RW           40    .bss.htim2          tim.o
     0x200000c8        -       0x00000044   Zero   RW           55    .bss.husart2        usart.o
     0x2000010c        -       0x00000004   Zero   RW          486    .bss.uwTick         stm32f1xx_hal.o
@@ -2059,7 +2059,7 @@ Image component sizes
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Object Name
 
        132          0          0          0         15       5221   cppmain.o
-       200          0          0          0          0       3013   drive.o
+       264          0          0          0          0       3039   drive.o
        234          0          0          0          0       1611   gpio.o
        128          0          0          0          0       1880   main.o
        170         32          0          0          0       3055   move.o
@@ -2079,7 +2079,7 @@ Image component sizes
        180          0          0          0         68       4181   usart.o
 
     ----------------------------------------------------------------------
-      5722         90        310         12       1700     159079   Object Totals
+      5786         90        310         12       1700     159105   Object Totals
          0          0         32          0          0          0   (incl. Generated)
         76          0          0          0          5          0   (incl. Padding)
 
@@ -2128,15 +2128,15 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
 
-      6002        106        310         12       1796     159215   Grand Totals
-      6002        106        310         12       1796     159215   ELF Image Totals
-      6002        106        310         12          0          0   ROM Totals
+      6066        106        310         12       1796     159241   Grand Totals
+      6066        106        310         12       1796     159241   ELF Image Totals
+      6066        106        310         12          0          0   ROM Totals
 
 ==============================================================================
 
-    Total RO  Size (Code + RO Data)                 6312 (   6.16kB)
+    Total RO  Size (Code + RO Data)                 6376 (   6.23kB)
     Total RW  Size (RW Data + ZI Data)              1808 (   1.77kB)
-    Total ROM Size (Code + RO Data + RW Data)       6324 (   6.18kB)
+    Total ROM Size (Code + RO Data + RW Data)       6388 (   6.24kB)
 
 ==============================================================================
 
