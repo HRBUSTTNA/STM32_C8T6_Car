@@ -38,9 +38,10 @@ void cpp_main() {
 void cpp_while_main() {
     //PWM_P->Now_Time++;//示例，Car.PWM.Now_Time自加（验证过可以这么写）如果不需要修改PWM相关参数，那么就直接传送Car.PWM即可
     //Car.PWM.Now_Time++;
-    GW.GW_scanf.GW_INPUT_SCANF(&GW.GW_input);
+    GW.GW_scanf.GW_INPUT_SCANF(&GW.GW_input_val);//进行输入检测
+    GW.GW_scanf.GW_MOVE_SCANF(&GW.GW_input_val);//对输入进行判断得出结果
     Car.Car_Move.PWM_Speed_all(Car.PWM, Car.mottor_Move);
-    GW.GW_scanf.GW_MOVE(&GW.GW_input, Car);
+    Car.Car_Move.move_all(GW.GW_input_val.GW_MOD, Car.mottor_Move);
 }
 
 //定时器响应函数
