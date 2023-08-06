@@ -5,7 +5,7 @@
 
 //移动行为模式确定
 void GW_SCANF_Setting::GW_MOVE_SCANF(GW_INPUT_Setting *GW_input) {
-    if ((GW_input->GW_1 == GW_input->GW_2 == GW_input->GW_3 == GW_input->GW_6 == GW_input->GW_7 == GW_input->GW_8 ==
+    /*if ((GW_input->GW_1 == GW_input->GW_2 == GW_input->GW_3 == GW_input->GW_6 == GW_input->GW_7 == GW_input->GW_8 ==
          1) && (GW_input->GW_5 == 0 || GW_input->GW_4 == 0)) {
         GW_input->GW_MOD = 1;//前进模式
     }
@@ -18,7 +18,7 @@ void GW_SCANF_Setting::GW_MOVE_SCANF(GW_INPUT_Setting *GW_input) {
     if (GW_input->GW_1 == GW_input->GW_2 == GW_input->GW_3 == GW_input->GW_4 == GW_input->GW_5 == GW_input->GW_6 ==
         GW_input->GW_7 == GW_input->GW_8 == 1) {
         GW_input->GW_MOD = 0;//停止然后等待树莓派指令
-    }/*
+    }*/
     if (((!GW_input->GW_1 || !GW_input->GW_2 || !GW_input->GW_3) ==
          (!GW_input->GW_6 || !GW_input->GW_7 || !GW_input->GW_8)
          == 0) && (GW_input->GW_5 == 0 || GW_input->GW_4 == 0)) {
@@ -29,11 +29,52 @@ void GW_SCANF_Setting::GW_MOVE_SCANF(GW_INPUT_Setting *GW_input) {
         GW_input->GW_MOD = 4;//右转模式(矫正)
     } else {
         GW_input->GW_MOD = 0;//停止然后等待树莓派指令
-    }*/
+    }
 }
 
 //移动参数输入
 void GW_SCANF_Setting::GW_INPUT_SCANF(GW_INPUT_Setting *GW_input) {
+    if (HAL_GPIO_ReadPin(GW_1_GPIO_Port, GW_1_Pin) == GPIO_PIN_SET) {
+        GW_input->GW_1 = 1;
+    } else {
+        GW_input->GW_1 = 0;
+    }
+    if (HAL_GPIO_ReadPin(GW_2_GPIO_Port, GW_2_Pin) == GPIO_PIN_SET) {
+        GW_input->GW_2 = 1;
+    } else {
+        GW_input->GW_2 = 0;
+    }
+    if (HAL_GPIO_ReadPin(GW_3_GPIO_Port, GW_3_Pin) == GPIO_PIN_SET) {
+        GW_input->GW_3 = 1;
+    } else {
+        GW_input->GW_3 = 0;
+    }
+    if (HAL_GPIO_ReadPin(GW_4_GPIO_Port, GW_4_Pin) == GPIO_PIN_SET) {
+        GW_input->GW_4 = 1;
+    } else {
+        GW_input->GW_4 = 0;
+    }
+    if (HAL_GPIO_ReadPin(GW_5_GPIO_Port, GW_5_Pin) == GPIO_PIN_SET) {
+        GW_input->GW_5 = 1;
+    } else {
+        GW_input->GW_5 = 0;
+    }
+    if (HAL_GPIO_ReadPin(GW_6_GPIO_Port, GW_6_Pin) == GPIO_PIN_SET) {
+        GW_input->GW_6 = 1;
+    } else {
+        GW_input->GW_6 = 0;
+    }
+    if (HAL_GPIO_ReadPin(GW_7_GPIO_Port, GW_7_Pin) == GPIO_PIN_SET) {
+        GW_input->GW_7 = 1;
+    } else {
+        GW_input->GW_7 = 0;
+    }
+    if (HAL_GPIO_ReadPin(GW_8_GPIO_Port, GW_8_Pin) == GPIO_PIN_SET) {
+        GW_input->GW_8 = 1;
+    } else {
+        GW_input->GW_8 = 0;
+    }
+    /*
     GW_input->GW_1 = HAL_GPIO_ReadPin(GW_1_GPIO_Port, GW_1_Pin);
     GW_input->GW_2 = HAL_GPIO_ReadPin(GW_2_GPIO_Port, GW_2_Pin);
     GW_input->GW_3 = HAL_GPIO_ReadPin(GW_3_GPIO_Port, GW_3_Pin);
@@ -41,5 +82,5 @@ void GW_SCANF_Setting::GW_INPUT_SCANF(GW_INPUT_Setting *GW_input) {
     GW_input->GW_5 = HAL_GPIO_ReadPin(GW_5_GPIO_Port, GW_5_Pin);
     GW_input->GW_6 = HAL_GPIO_ReadPin(GW_6_GPIO_Port, GW_6_Pin);
     GW_input->GW_7 = HAL_GPIO_ReadPin(GW_7_GPIO_Port, GW_7_Pin);
-    GW_input->GW_8 = HAL_GPIO_ReadPin(GW_8_GPIO_Port, GW_8_Pin);
+    GW_input->GW_8 = HAL_GPIO_ReadPin(GW_8_GPIO_Port, GW_8_Pin);*/
 }
