@@ -1047,4 +1047,4 @@ add_executable(C8T6_CPP
         MDK-ARM/C8T6_CPP.uvprojx
         MDK-ARM/startup_stm32f103xb.s
         .mxproject
-        C8T6_CPP.ioc MDK-ARM/include/grayscale/Drive.cpp MDK-ARM/include/grayscale/Drive.h)
+        C8T6_CPP.ioc MDK-ARM/include/grayscale/Drive.cpp MDK-ARM/include/grayscale/Drive.h MDK-ARM/include/UART/UART.cpp MDK-ARM/include/UART/UART.c)

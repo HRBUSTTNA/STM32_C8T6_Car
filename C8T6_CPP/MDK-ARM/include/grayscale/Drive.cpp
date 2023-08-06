@@ -3,6 +3,63 @@
 //
 #include "includecpp.h"
 
+void GW_SCANF_Setting::GW_PI_INPUT(GW_INPUT_Setting *GW_input) {
+    /*读取树莓派的顺序
+     * 1、STM32向树莓派发送1，表示可以接受数据
+     * 2、树莓派把数据传输到3个data线上（刷新数据）
+     * 3、树莓派读取接口发送1，同意读取（完成读取）
+     * 4、STM32将可以接受信号致0，表示不允许树莓派进行data刷新
+     * 5、STM32读取data数据
+     * 6、STM32对读取到的数据进行分析
+     */
+    HAL_GPIO_WritePin(PI_OUTPUT_GPIO_Port, PI_OUTPUT_Pin, GPIO_PIN_SET);//传输给树莓派1（表示可以接受数据）
+    while (HAL_GPIO_ReadPin(PI_INPUT_GPIO_Port, PI_INPUT_Pin) == 1);//循环到树莓派同意给信息
+    HAL_GPIO_WritePin(PI_OUTPUT_GPIO_Port, PI_OUTPUT_Pin, GPIO_PIN_RESET);//关闭与树莓派通讯
+    if (HAL_GPIO_ReadPin(DATA_1_GPIO_Port, DATA_1_Pin) == GPIO_PIN_SET) {
+        GW_input->DATA1 = 1;
+    } else {
+        GW_input->DATA1 = 0;
+    }//读取data1数据
+    if (HAL_GPIO_ReadPin(DATA_2_GPIO_Port, DATA_2_Pin) == GPIO_PIN_SET) {
+        GW_input->DATA2 = 1;
+    } else {
+        GW_input->DATA2 = 0;
+    }//读取data2数据
+    if (HAL_GPIO_ReadPin(DATA_3_GPIO_Port, DATA_3_Pin) == GPIO_PIN_SET) {
+        GW_input->DATA3 = 1;
+    } else {
+        GW_input->DATA3 = 0;
+    }//读取data3数据
+    /*
+    HAL_GPIO_ReadPin(DATA_1_GPIO_Port, DATA_1_Pin);//读取data1数据
+    HAL_GPIO_ReadPin(DATA_2_GPIO_Port, DATA_2_Pin);//读取data2数据
+    HAL_GPIO_ReadPin(DATA_3_GPIO_Port, DATA_3_Pin);//读取data3数据*/
+}
+
+void GW_SCANF_Setting::GW_PI_SCANF(GW_INPUT_Setting *GW_input) {
+    //000(3\2\1的排序方式)
+    if ((GW_input->DATA1 == 0) && (GW_input->DATA2 == 0) && (GW_input->DATA3 == 0)) {
+        GW_input->GW_MOD = 0;//返回停止命令
+    }
+    //001(3\2\1的排序方式)
+    if ((GW_input->DATA1 == 1) && (GW_input->DATA2 == 0) && (GW_input->DATA3 == 0)) {
+        GW_input->GW_MOD = 1;//返回前进命令
+    }
+    //010(3\2\1的排序方式)
+    if ((GW_input->DATA1 == 0) && (GW_input->DATA2 == 1) && (GW_input->DATA3 == 0)) {
+        GW_input->GW_MOD = 2;//返回左转命令
+    }
+    //011(3\2\1的排序方式)
+    if ((GW_input->DATA1 == 1) && (GW_input->DATA2 == 1) && (GW_input->DATA3 == 0)) {
+        GW_input->GW_MOD = 3;//返回右转命令
+    }
+    //100(3\2\1的排序方式)
+    if ((GW_input->DATA1 == 0) && (GW_input->DATA2 == 0) && (GW_input->DATA3 == 1)) {
+        GW_input->GW_MOD = 4;//返回掉头命令命令（可能会有问题）
+    }
+    //最后要加延时等待完成转向例如左转90度需要0.5s持续进行左转信号
+}
+
 //移动行为模式确定
 void GW_SCANF_Setting::GW_MOVE_SCANF(GW_INPUT_Setting *GW_input) {
     /*if ((GW_input->GW_1 == GW_input->GW_2 == GW_input->GW_3 == GW_input->GW_6 == GW_input->GW_7 == GW_input->GW_8 ==
@@ -22,13 +79,15 @@ void GW_SCANF_Setting::GW_MOVE_SCANF(GW_INPUT_Setting *GW_input) {
     if (((!GW_input->GW_1 || !GW_input->GW_2 || !GW_input->GW_3) ==
          (!GW_input->GW_6 || !GW_input->GW_7 || !GW_input->GW_8)
          == 0) && (GW_input->GW_5 == 0 || GW_input->GW_4 == 0)) {
-        GW_input->GW_MOD = 2;//前进模式
+        GW_input->GW_MOD = 3;//前进模式
     } else if (GW_input->GW_3 == 0) {
-        GW_input->GW_MOD = 3;//左转模式(矫正)
+        GW_input->GW_MOD = 1;//左转模式(矫正)
     } else if (GW_input->GW_6 == 0) {
-        GW_input->GW_MOD = 4;//右转模式(矫正)
+        GW_input->GW_MOD = 2;//右转模式(矫正)
     } else {
         GW_input->GW_MOD = 0;//停止然后等待树莓派指令
+        GW_PI_INPUT(GW_input);//读取树莓派传递模式
+        GW_PI_SCANF(GW_input);//判断模式
     }
 }
 
