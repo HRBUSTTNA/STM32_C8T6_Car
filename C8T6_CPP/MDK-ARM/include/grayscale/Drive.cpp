@@ -10,36 +10,26 @@ void GW_SCANF_Setting::GW_MOVE_SCANF(GW_INPUT_Setting *GW_input) {
         GW_input->GW_MOD = 1;//前进模式
     }
     if ((GW_input->GW_3 == 0) && (GW_input->GW_1 == GW_input->GW_2 == 1)) {
-        GW_input->GW_MOD = 2;//左转模式(矫正)
+        GW_input->GW_MOD = 3;//左转模式(矫正)
     }
     if ((GW_input->GW_6 == 0) && (GW_input->GW_7 == GW_input->GW_8 == 1)) {
-        GW_input->GW_MOD = 3;//右转模式(矫正)
+        GW_input->GW_MOD = 4;//右转模式(矫正)
     }
     if (GW_input->GW_1 == GW_input->GW_2 == GW_input->GW_3 == GW_input->GW_4 == GW_input->GW_5 == GW_input->GW_6 ==
         GW_input->GW_7 == GW_input->GW_8 == 1) {
-        GW_input->GW_MOD = 4;//停止然后等待树莓派指令
-    }
-}
-
-//移动模式实现
-void GW_SCANF_Setting::GW_MOVE(GW_INPUT_Setting *GW_input, Car_Setting Car) {
-    switch (GW_input->GW_MOD) {
-        case 1:
-            Car.Car_Move.move_all(1, Car.mottor_Move);
-            break;
-        case 2:
-            Car.Car_Move.move_all(3, Car.mottor_Move);
-            break;
-        case 3:
-            Car.Car_Move.move_all(4, Car.mottor_Move);
-            break;
-        case 4:
-            Car.Car_Move.move_all(1, Car.mottor_Move);
-            HAL_Delay(500);
-            Car.Car_Move.move_all(0, Car.mottor_Move);
-            //串口(预留位置)
-            break;
-    }
+        GW_input->GW_MOD = 0;//停止然后等待树莓派指令
+    }/*
+    if (((!GW_input->GW_1 || !GW_input->GW_2 || !GW_input->GW_3) ==
+         (!GW_input->GW_6 || !GW_input->GW_7 || !GW_input->GW_8)
+         == 0) && (GW_input->GW_5 == 0 || GW_input->GW_4 == 0)) {
+        GW_input->GW_MOD = 2;//前进模式
+    } else if (GW_input->GW_3 == 0) {
+        GW_input->GW_MOD = 3;//左转模式(矫正)
+    } else if (GW_input->GW_6 == 0) {
+        GW_input->GW_MOD = 4;//右转模式(矫正)
+    } else {
+        GW_input->GW_MOD = 0;//停止然后等待树莓派指令
+    }*/
 }
 
 //移动参数输入
