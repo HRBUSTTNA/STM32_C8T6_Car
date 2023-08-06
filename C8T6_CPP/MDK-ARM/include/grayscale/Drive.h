@@ -24,15 +24,12 @@ public:
 
     //移动参数输入
     void GW_INPUT_SCANF(GW_INPUT_Setting *GW_input);
-
-    //移动模式实现
-    void GW_MOVE(GW_INPUT_Setting *GW_input, Car_Setting Car);
 };
 
 class GW_Setting {
 public:
     GW_SCANF_Setting GW_scanf;
-    GW_INPUT_Setting GW_input;
+    GW_INPUT_Setting GW_input_val;
 };
 
 #endif //C8T6_CPP_DRIVE_H
