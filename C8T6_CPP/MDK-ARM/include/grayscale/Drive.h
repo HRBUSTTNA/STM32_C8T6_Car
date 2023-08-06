@@ -18,12 +18,13 @@ public:
     unsigned char DATA1;
     unsigned char DATA2;
     unsigned char DATA3;
+    unsigned char TIM_NUM;
 };
 
 class GW_SCANF_Setting {
 public:
     //移动模式判断
-    void GW_MOVE_SCANF(GW_INPUT_Setting *GW_input);
+    void GW_MOVE_SCANF(GW_INPUT_Setting *GW_input, Car_Setting *Car);
 
     //移动参数输入
     void GW_INPUT_SCANF(GW_INPUT_Setting *GW_input);
