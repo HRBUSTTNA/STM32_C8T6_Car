@@ -20,8 +20,33 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dbf03606-b78e-4794-a2df-9b0a15b3a980" name="更改" comment="V0.5.1">
+    <list default="true" id="dbf03606-b78e-4794-a2df-9b0a15b3a980" name="更改" comment="V0.5.2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mxproject" beforeDir="false" afterPath="$PROJECT_DIR$/.mxproject" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/C8T6_CPP.ioc" beforeDir="false" afterPath="$PROJECT_DIR$/C8T6_CPP.ioc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Inc/main.h" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Inc/main.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Inc/stm32f1xx_hal_conf.h" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Inc/stm32f1xx_hal_conf.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Inc/usart.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Src/gpio.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/gpio.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Src/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/main.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Src/usart.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MDK-ARM/C8T6_CPP.uvguix.Cossiant" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/C8T6_CPP.uvguix.Cossiant" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MDK-ARM/C8T6_CPP.uvoptx" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/C8T6_CPP.uvoptx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MDK-ARM/C8T6_CPP.uvprojx" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/C8T6_CPP.uvprojx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MDK-ARM/C8T6_CPP/C8T6_CPP.axf" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/C8T6_CPP/C8T6_CPP.axf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MDK-ARM/C8T6_CPP/C8T6_CPP.build_log.htm" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/C8T6_CPP/C8T6_CPP.build_log.htm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MDK-ARM/C8T6_CPP/C8T6_CPP.hex" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/C8T6_CPP/C8T6_CPP.hex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MDK-ARM/C8T6_CPP/C8T6_CPP.htm" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/C8T6_CPP/C8T6_CPP.htm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MDK-ARM/C8T6_CPP/C8T6_CPP.lnp" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/C8T6_CPP/C8T6_CPP.lnp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MDK-ARM/C8T6_CPP/C8T6_CPP.map" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/C8T6_CPP/C8T6_CPP.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MDK-ARM/C8T6_CPP/C8T6_CPP_C8T6_CPP.dep" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/C8T6_CPP/C8T6_CPP_C8T6_CPP.dep" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MDK-ARM/include/Header/includecpp.h" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/include/Header/includecpp.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MDK-ARM/include/cppmain.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/include/cppmain.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MDK-ARM/include/grayscale/Drive.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/include/grayscale/Drive.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MDK-ARM/include/grayscale/Drive.h" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/include/grayscale/Drive.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,6 +97,11 @@
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -84,7 +114,8 @@
       <workItem from="1691253863030" duration="6156000" />
       <workItem from="1691260135193" duration="963000" />
       <workItem from="1691269425901" duration="2000" />
-      <workItem from="1691300373974" duration="3349000" />
+      <workItem from="1691300373974" duration="6267000" />
+      <workItem from="1691309985649" duration="3187000" />
     </task>
     <task id="LOCAL-00001" summary="V0.5.1">
       <option name="closed" value="true" />
@@ -142,7 +173,15 @@
       <option name="project" value="LOCAL" />
       <updated>1691303441542</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="V0.5.2">
+      <option name="closed" value="true" />
+      <created>1691303965461</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1691303965461</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -168,6 +207,7 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="V0.5.1" />
-    <option name="LAST_COMMIT_MESSAGE" value="V0.5.1" />
+    <MESSAGE value="V0.5.2" />
+    <option name="LAST_COMMIT_MESSAGE" value="V0.5.2" />
   </component>
 </project>

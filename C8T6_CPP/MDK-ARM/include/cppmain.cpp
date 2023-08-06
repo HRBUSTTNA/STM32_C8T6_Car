@@ -31,6 +31,7 @@ void cpp_main() {
     Car.PWM.Now_Time = 0;
     Car.PWM.Change_Num = 2;
     Car.PWM.Max_Num = 10;
+    HAL_GPIO_WritePin(PI_OUTPUT_GPIO_Port,PI_OUTPUT_Pin,GPIO_PIN_RESET);//初始化树莓派通讯协议为0
     HAL_TIM_Base_Start_IT(&htim2);
 }
 

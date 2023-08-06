@@ -15,6 +15,9 @@ public:
     unsigned char GW_7;
     unsigned char GW_8;
     unsigned char GW_MOD;
+    unsigned char DATA1;
+    unsigned char DATA2;
+    unsigned char DATA3;
 };
 
 class GW_SCANF_Setting {
@@ -24,6 +27,12 @@ public:
 
     //移动参数输入
     void GW_INPUT_SCANF(GW_INPUT_Setting *GW_input);
+
+    //树莓派输入函数
+    void GW_PI_INPUT(GW_INPUT_Setting *GW_input);
+
+    //树莓派输入参数模式判断
+    void GW_PI_SCANF(GW_INPUT_Setting *GW_input);
 };
 
 class GW_Setting {

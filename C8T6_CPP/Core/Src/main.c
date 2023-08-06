@@ -19,7 +19,6 @@
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
 #include "tim.h"
-#include "usart.h"
 #include "gpio.h"
 
 /* Private includes ----------------------------------------------------------*/
@@ -88,9 +87,9 @@ int main(void)
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
   MX_TIM2_Init();
-  MX_USART2_Init();
   /* USER CODE BEGIN 2 */
 	cpp_main();
+    unsigned char UART_BUF;
   /* USER CODE END 2 */
 
   /* Infinite loop */
