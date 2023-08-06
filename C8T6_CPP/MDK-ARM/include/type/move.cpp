@@ -48,17 +48,17 @@ void Car_move_Setting::move_all(unsigned char move_Mod, mottor_MOVE_Setting mott
             mottor4_mod = 1;
             break;
         case 5:
-            //小车整体左移
-            mottor1_mod = 2;
+            //小车左转90
+            mottor1_mod = 1;
             mottor2_mod = 1;
-            mottor3_mod = 2;
+            mottor3_mod = 1;
             mottor4_mod = 1;
             break;
-            //小车整体右移
+            //小车右转90
         case 6:
-            mottor1_mod = 1;
+            mottor1_mod = 2;
             mottor2_mod = 2;
-            mottor3_mod = 1;
+            mottor3_mod = 2;
             mottor4_mod = 2;
             break;
     }

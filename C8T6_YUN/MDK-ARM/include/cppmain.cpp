@@ -48,6 +48,7 @@ void cpp_while_main() {
     YUN_TAI_LEFT_AND_RIGHT.Move.YUN_CHANGE_NUM(&YUN_TAI_LEFT_AND_RIGHT.Val);//云台移动参数修改函数
     YUN_TAI_UP_AND_DOWN.Move.YUN_MOVE(YUN_TAI_UP_AND_DOWN.Val);//云台移动函数
     YUN_TAI_UP_AND_DOWN.Move.YUN_CHANGE_NUM(&YUN_TAI_UP_AND_DOWN.Val);//云台移动参数修改函数
+    printf("\n");
 }
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
