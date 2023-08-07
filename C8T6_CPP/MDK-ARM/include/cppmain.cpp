@@ -32,6 +32,7 @@ void cpp_main() {
     Car.PWM.Change_Num = 2;
     Car.PWM.Max_Num = 10;
     GW.GW_input_val.TIM_MOD3 = 0;
+    GW.GW_input_val.TIM_MOD4 = 0;
     HAL_TIM_Base_Start_IT(&htim2);
 }
 
