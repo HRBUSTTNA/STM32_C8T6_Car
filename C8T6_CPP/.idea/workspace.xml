@@ -21,6 +21,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dbf03606-b78e-4794-a2df-9b0a15b3a980" name="更改" comment="V0.6.3&#10;加入TIM4，使用TIM4来使其进行延时掉头">
+      <change beforePath="$PROJECT_DIR$/MDK-ARM/C8T6_CPP.uvguix.Cossiant" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/C8T6_CPP.uvguix.Cossiant" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MDK-ARM/C8T6_CPP/C8T6_CPP.axf" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/C8T6_CPP/C8T6_CPP.axf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MDK-ARM/C8T6_CPP/C8T6_CPP.build_log.htm" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/C8T6_CPP/C8T6_CPP.build_log.htm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MDK-ARM/C8T6_CPP/C8T6_CPP.hex" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/C8T6_CPP/C8T6_CPP.hex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MDK-ARM/C8T6_CPP/C8T6_CPP.htm" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/C8T6_CPP/C8T6_CPP.htm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MDK-ARM/C8T6_CPP/C8T6_CPP_C8T6_CPP.dep" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/C8T6_CPP/C8T6_CPP_C8T6_CPP.dep" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MDK-ARM/include/cppmain.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/include/cppmain.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -91,7 +97,7 @@
       <workItem from="1691333754671" duration="64000" />
       <workItem from="1691384031000" duration="1703000" />
       <workItem from="1691403651055" duration="419000" />
-      <workItem from="1691404099136" duration="245000" />
+      <workItem from="1691404099136" duration="283000" />
     </task>
     <task id="LOCAL-00001" summary="V0.5.1">
       <option name="closed" value="true" />
@@ -165,7 +171,15 @@
       <option name="project" value="LOCAL" />
       <updated>1691404147979</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="V0.6.3&#10;加入TIM4，使用TIM4来使其进行延时掉头">
+      <option name="closed" value="true" />
+      <created>1691404357644</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1691404357644</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
