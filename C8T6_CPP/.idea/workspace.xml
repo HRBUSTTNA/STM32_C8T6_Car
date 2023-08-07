@@ -21,8 +21,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dbf03606-b78e-4794-a2df-9b0a15b3a980" name="更改" comment="V0.6.3&#10;加入TIM4，使用TIM4来使其进行延时掉头">
+      <change afterPath="$PROJECT_DIR$/MDK-ARM/include/UART/bsp_IDLEUART.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MDK-ARM/include/UART/bsp_IDLEUART.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MDK-ARM/include/UART/bsp_PrintArt.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MDK-ARM/include/UART/bsp_PrintArt.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MDK-ARM/C8T6_CPP.uvguix.Cossiant" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/C8T6_CPP.uvguix.Cossiant" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MDK-ARM/C8T6_CPP/C8T6_CPP.axf" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/C8T6_CPP/C8T6_CPP.axf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MDK-ARM/C8T6_CPP/C8T6_CPP.build_log.htm" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/C8T6_CPP/C8T6_CPP.build_log.htm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MDK-ARM/C8T6_CPP/C8T6_CPP.htm" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/C8T6_CPP/C8T6_CPP.htm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MDK-ARM/C8T6_CPP/C8T6_CPP.map" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/C8T6_CPP/C8T6_CPP.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MDK-ARM/C8T6_CPP/C8T6_CPP_C8T6_CPP.dep" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/C8T6_CPP/C8T6_CPP_C8T6_CPP.dep" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MDK-ARM/include/Header/includecpp.h" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/include/Header/includecpp.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MDK-ARM/include/grayscale/Drive.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/include/grayscale/Drive.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
     </list>
@@ -97,6 +107,7 @@
       <workItem from="1691404099136" duration="661000" />
       <workItem from="1691405503192" duration="710000" />
       <workItem from="1691416337096" duration="375000" />
+      <workItem from="1691418185360" duration="1654000" />
     </task>
     <task id="LOCAL-00001" summary="V0.5.1">
       <option name="closed" value="true" />

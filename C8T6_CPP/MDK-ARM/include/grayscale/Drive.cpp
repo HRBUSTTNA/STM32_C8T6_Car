@@ -44,6 +44,16 @@ void GW_SCANF_Setting::GW_PI_INPUT(GW_INPUT_Setting *GW_input) {
     printf("I");//请求树莓派命令
     while (HAL_UART_Receive_IT(&huart2, &GW_input->PI_MOD, 1) != HAL_OK);
     printf("O");//结束树莓派命令
+    /*
+     * 一下代码为测试代码，主要目的是为了探究串口接收到数组后能否正常
+    unsigned char *PI_CE;
+    while (HAL_UART_Receive_IT(&huart2,PI_CE,5) != HAL_OK);
+    //这里必须要强制转换成char*否则会因为数据类型不同报错
+    if(strcmp((char*)PI_CE,"hello")==0)
+    {
+    //判断出来的函数
+    }
+    */
 }
 
 void GW_SCANF_Setting::GW_PI_SCANF(GW_INPUT_Setting *GW_input) {
