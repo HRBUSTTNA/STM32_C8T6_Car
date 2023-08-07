@@ -41,9 +41,9 @@ void GW_SCANF_Setting::GW_PI_INPUT(GW_INPUT_Setting *GW_input) {
      * 2、树莓派发送1个字节的数字(例如我想发送MOD1,则发送数字1即可)
      * 3、STM32再发送"OK"完成通讯
      */
-    printf("INPUT");
+    printf("I");//请求树莓派命令
     while (HAL_UART_Receive_IT(&huart2, &GW_input->PI_MOD, 1) != HAL_OK);
-    printf("OK");
+    printf("O");//结束树莓派命令
 }
 
 void GW_SCANF_Setting::GW_PI_SCANF(GW_INPUT_Setting *GW_input) {
@@ -54,13 +54,13 @@ void GW_SCANF_Setting::GW_PI_SCANF(GW_INPUT_Setting *GW_input) {
     if ((GW_input->DATA1 == 1) && (GW_input->DATA2 == 0) && (GW_input->DATA3 == 0)) {
         GW_input->GW_MOD = 3;//返回前进命令
     }*/
-    if (GW_input->PI_MOD == 5) {
+    if (GW_input->PI_MOD == '5') {
         GW_input->GW_MOD = 5;//返回左转命令(1)
     }
-    if (GW_input->PI_MOD == 6) {
+    if (GW_input->PI_MOD == '6') {
         GW_input->GW_MOD = 6;//返回右转命令(2)
     }
-    if (GW_input->PI_MOD == 7) {
+    if (GW_input->PI_MOD == '7') {
         GW_input->GW_MOD = 7;//返回掉头命令命令（可能会有问题）
     }
     //最后要加延时等待完成转向例如左转90度需要0.5s持续进行左转信号
