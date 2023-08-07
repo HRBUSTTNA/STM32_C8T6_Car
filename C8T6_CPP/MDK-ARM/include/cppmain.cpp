@@ -31,8 +31,7 @@ void cpp_main() {
     Car.PWM.Now_Time = 0;
     Car.PWM.Change_Num = 2;
     Car.PWM.Max_Num = 10;
-    GW.GW_input_val.TIM_NUM = 0;
-    HAL_GPIO_WritePin(PI_OUTPUT_GPIO_Port, PI_OUTPUT_Pin, GPIO_PIN_RESET);//初始化树莓派通讯协议为0
+    GW.GW_input_val.TIM_MOD = 0;
     HAL_TIM_Base_Start_IT(&htim2);
 }
 
@@ -43,9 +42,9 @@ void cpp_while_main() {
     if ((GW.GW_input_val.GW_MOD != 5) && (GW.GW_input_val.GW_MOD != 6)) {
         GW.GW_scanf.GW_INPUT_SCANF(&GW.GW_input_val);//进行输入检测
         GW.GW_scanf.GW_MOVE_SCANF(&GW.GW_input_val, &Car);//对输入进行判断得出结果
-    } else if (GW.GW_input_val.TIM_NUM == 0) {
+    } else if (GW.GW_input_val.TIM_MOD == 0) {
         HAL_TIM_Base_Start_IT(&htim3);
-        GW.GW_input_val.TIM_NUM = 1;
+        GW.GW_input_val.TIM_MOD = 1;
     }
     Car.Car_Move.PWM_Speed_all(Car.PWM, Car.mottor_Move);//PWM参数设置函数(一直在变)
     Car.Car_Move.move_all(GW.GW_input_val.GW_MOD, Car.mottor_Move);//电机移动控制函数
@@ -53,15 +52,16 @@ void cpp_while_main() {
 
 //定时器响应函数
 void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim) {
+    //定时1ms，给小车PWM调速使用
     if (htim->Instance == htim2.Instance) {
         Car.PWM.Now_Time++;
         if (Car.PWM.Now_Time == Car.PWM.Max_Num) {
             Car.PWM.Now_Time = 0;
         }
     }
+    //定时500ms，给小车转向使用（这个具体参数要调整）
     if (htim->Instance == htim3.Instance) {
+        GW.GW_input_val.TIM_MOD = 0;
         GW.GW_input_val.GW_MOD = 0;
-        GW.GW_input_val.TIM_NUM = 0;
-        HAL_TIM_Base_Stop_IT(&htim3);
     }
 }

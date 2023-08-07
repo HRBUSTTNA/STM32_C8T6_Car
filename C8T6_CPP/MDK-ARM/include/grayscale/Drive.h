@@ -15,10 +15,8 @@ public:
     unsigned char GW_7;
     unsigned char GW_8;
     unsigned char GW_MOD;
-    unsigned char DATA1;
-    unsigned char DATA2;
-    unsigned char DATA3;
-    unsigned char TIM_NUM;
+    unsigned char PI_MOD;
+    unsigned char TIM_MOD;
 };
 
 class GW_SCANF_Setting {
