@@ -12,7 +12,7 @@ void GW_SCANF_Setting::GW_PI_INPUT(GW_INPUT_Setting *GW_input) {
      * 5、树莓派此时归零(2)
      * 5、STM32读取data数据(3)
      * 6、STM32对读取到的数据进行分析
-     */
+     *
     HAL_GPIO_WritePin(PI_OUTPUT_GPIO_Port, PI_OUTPUT_Pin, GPIO_PIN_SET);//传输给树莓派1（表示可以接受数据）
     //检测到高电平就刷新，刷新完成后输出到DATA
     while (HAL_GPIO_ReadPin(PI_INPUT_GPIO_Port, PI_INPUT_Pin) == GPIO_PIN_SET);//循环到树莓派同意给信息
@@ -34,31 +34,33 @@ void GW_SCANF_Setting::GW_PI_INPUT(GW_INPUT_Setting *GW_input) {
     } else {
         GW_input->DATA3 = 0;
     }//读取data3数据
-    /*
     HAL_GPIO_ReadPin(DATA_1_GPIO_Port, DATA_1_Pin);//读取data1数据
     HAL_GPIO_ReadPin(DATA_2_GPIO_Port, DATA_2_Pin);//读取data2数据
     HAL_GPIO_ReadPin(DATA_3_GPIO_Port, DATA_3_Pin);//读取data3数据*/
+    /* 1、STM32先发送"INPUT"
+     * 2、树莓派发送1个字节的数字(例如我想发送MOD1,则发送数字1即可)
+     * 3、STM32再发送"OK"完成通讯
+     */
+    printf("INPUT");
+    while (HAL_UART_Receive_IT(&huart2, &GW_input->PI_MOD, 1) != HAL_OK);
+    printf("OK");
 }
 
 void GW_SCANF_Setting::GW_PI_SCANF(GW_INPUT_Setting *GW_input) {
-    //000(3\2\1的排序方式)
+    /*
     if ((GW_input->DATA1 == 0) && (GW_input->DATA2 == 0) && (GW_input->DATA3 == 0)) {
         GW_input->GW_MOD = 0;//返回停止命令
     }
-    //001(3\2\1的排序方式)
     if ((GW_input->DATA1 == 1) && (GW_input->DATA2 == 0) && (GW_input->DATA3 == 0)) {
         GW_input->GW_MOD = 3;//返回前进命令
-    }
-    //010(3\2\1的排序方式)
-    if ((GW_input->DATA1 == 0) && (GW_input->DATA2 == 1) && (GW_input->DATA3 == 0)) {
+    }*/
+    if (GW_input->PI_MOD == 5) {
         GW_input->GW_MOD = 5;//返回左转命令(1)
     }
-    //011(3\2\1的排序方式)
-    if ((GW_input->DATA1 == 1) && (GW_input->DATA2 == 1) && (GW_input->DATA3 == 0)) {
+    if (GW_input->PI_MOD == 6) {
         GW_input->GW_MOD = 6;//返回右转命令(2)
     }
-    //100(3\2\1的排序方式)
-    if ((GW_input->DATA1 == 0) && (GW_input->DATA2 == 0) && (GW_input->DATA3 == 1)) {
+    if (GW_input->PI_MOD == 7) {
         GW_input->GW_MOD = 7;//返回掉头命令命令（可能会有问题）
     }
     //最后要加延时等待完成转向例如左转90度需要0.5s持续进行左转信号
